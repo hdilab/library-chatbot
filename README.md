@@ -1,1 +1,1 @@
-# uta_library_chatbot_dev
+# UT Arlington Library Chatbot
