@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Rasa Core Visualisation</title>
+    <script src="https://dagrejs.github.io/project/dagre-d3/latest/dagre-d3.min.js"></script>
+    <script src="https://dagrejs.github.io/project/dagre/latest/dagre.min.js"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://dagrejs.github.io/project/graphlib-dot/v0.6.3/graphlib-dot.js"></script>
+</head>
+<body>
+<div id="errormsg" style="color: #b00"></div>
+<svg>
+    <style>
+        .node.invisible > rect {
+            display: none;
+        }
+
+        .node.start > rect {
+            fill: #7f7;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node.end > rect {
+            fill: #f77;
+            rx: 30;
+            ry: 18;
+        }
+
+        .node:not(.active) > rect, .node:not(.active) > .label {
+            opacity: 0.4;
+        }
+
+        .edgePath:not(.active) path {
+            opacity: 0.4;
+        }
+
+        .node.ellipsis > rect {
+            fill: #CCC;
+        }
+
+        .node.intent > rect {
+            fill: #7ff;
+        }
+
+        .node.dashed > rect {
+            stroke-dasharray: 5;
+        }
+
+        text {
+            font-weight: 300;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serf, serif;
+            font-size: 14px;
+            color: #1f1d1d;
+        }
+
+        .node rect {
+            stroke: #444;
+            fill: #fff;
+            stroke-width: 1.5px;
+        }
+
+        .edgePath path {
+            stroke: #333;
+            stroke-width: 1.5px;
+        }
+
+        svg {
+            position: fixed;
+            top: 10px;
+            left: 0;
+            height: 100%;
+            width: 100%
+        }
+    </style>
+    <g></g>
+</svg>
+<script>
+
+  function serveGraph() {
+    let oldInputGraphValue;
+
+    const url = 'visualization.dot';
+    const refreshInterval = 500;
+
+    // trigger a refresh by fetching an updated graph
+    setInterval(function () {
+      fetch(url).then(r => r.text()).then(dot => {
+        document.getElementById('errormsg').innerHTML = '';
+        if (oldInputGraphValue === dot) return;
+
+        oldInputGraphValue = dot;
+        drawGraph(dot);
+      }).catch(err => {
+        document.getElementById('errormsg').innerHTML =
+          'Failed to update plot. (' + err.message + ')';
+      });
+    }, refreshInterval);
+  }
+
+  function drawGraph(graph) {
+    let g = graphlibDot.read(graph);
+    // Set margins, if not present
+    if (!g.graph().hasOwnProperty("marginx") &&
+      !g.graph().hasOwnProperty("marginy")) {
+      g.graph().marginx = 20;
+      g.graph().marginy = 20;
+    }
+    g.graph().transition = function (selection) {
+      return selection.transition().duration(300);
+    };
+    // Render the graph into svg g
+    d3.select("svg g").call(render, g);
+  }
+  // Set up zoom support
+  const svg = d3.select("svg"),
+    inner = d3.select("svg g"),
+    zoom = d3.zoom().on("zoom", function () {
+      inner.attr("transform", d3.event.transform);
+    });
+  svg.call(zoom);
+
+  // Create and configure the renderer
+  const render = dagreD3.render();
+
+  let isClient = false;
+  isClient = true;
+
+  if (isClient) {
+    // Mark all nodes and their edges as active
+    cssRules = document.styleSheets[0].cssRules;
+    cssRules[3].style.opacity = 1;
+    cssRules[4].style.opacity = 1;
+
+    let graph;
+    graph = `digraph  {
+0 [class="start active", fillcolor=green, fontsize=12, label=START, style=filled];
+"-1" [class=end, fillcolor=red, fontsize=12, label=END, style=filled];
+1 [class="", fontsize=12, label=utter_greet];
+2 [class="", fontsize=12, label=utter_nursing_librarians_email];
+3 [class="", fontsize=12, label=utter_did_that_help];
+4 [class="", fontsize=12, label=utter_gratitude];
+5 [class="", fontsize=12, label=utter_goodbye];
+6 [class="", fontsize=12, label=action_restart];
+8 [class="", fontsize=12, label=utter_difference_between_qualitative_quantative_articles];
+15 [class="", fontsize=12, label=utter_did_that_help];
+16 [class="", fontsize=12, label=utter_ask_again];
+17 [class="", fontsize=12, label=utter_article_type_from_articles];
+20 [class="", fontsize=12, label=utter_goodbye];
+21 [class="", fontsize=12, label=utter_gratitude];
+23 [class="", fontsize=12, label=utter_goodbye];
+27 [class="", fontsize=12, label=utter_access_CINAHL_database];
+28 [class="", fontsize=12, label=utter_input_in_CINAHL];
+29 [class="", fontsize=12, label=utter_anymore_questions];
+33 [class="", fontsize=12, label=utter_happy_to_help];
+34 [class="", fontsize=12, label=utter_ask_article_for_research_or_project];
+35 [class="", fontsize=12, label=utter_ask_field_of_study];
+36 [class="", fontsize=12, label=action_database_link];
+37 [class="", fontsize=12, label=utter_did_that_help];
+38 [class="", fontsize=12, label=utter_more_help_nursing_librarian];
+40 [class=intent, fillcolor=lightblue, label="good\ morning", shape=rect, style=filled];
+41 [class=intent, fillcolor=lightblue, label="see\ you\ around", shape=rect, style=filled];
+42 [class=intent, fillcolor=lightblue, label="i\ am\ looking\ for\ nursing\ librarian\ email", shape=rect, style=filled];
+43 [class=intent, fillcolor=lightblue, label="tell\ me\ about\ the\ difference\ between\ qualitative\ and\ quantitative\ research\ articles", shape=rect, style=filled];
+44 [class=intent, fillcolor=lightblue, label="how\ to\ access\ CINAHL\ database\?", shape=rect, style=filled];
+45 [class=intent, fillcolor=lightblue, label="don\'t\ know\ how\ to\ get\ quantitative\ research\ article", shape=rect, style=filled];
+46 [class=intent, fillcolor=lightblue, label=goodbye, shape=rect, style=filled];
+47 [class=intent, fillcolor=lightblue, label="yes\,\ I\ need\ articles\ on\ History", shape=rect, style=filled];
+48 [class=intent, fillcolor=lightblue, label="see\ you\ around", shape=rect, style=filled];
+49 [class=intent, fillcolor=lightblue, label="see\ you\ around", shape=rect, style=filled];
+50 [class=intent, fillcolor=lightblue, label="don\'t\ like\ that", shape=rect, style=filled];
+51 [class=intent, fillcolor=lightblue, label="is\ this\ article\ quantitative\ or\ qualitative\ \?", shape=rect, style=filled];
+52 [class=intent, fillcolor=lightblue, label="thanks\ a\ lot", shape=rect, style=filled];
+53 [class=intent, fillcolor=lightblue, label=no, shape=rect, style=filled];
+54 [class=intent, fillcolor=lightblue, label="of\ course", shape=rect, style=filled];
+55 [class=intent, fillcolor=lightblue, label="\/choose\{\\"area_of_study\\"\:\ \\"Nursing\\"\}", shape=rect, style=filled];
+56 [class=intent, fillcolor=lightblue, label=thanks, shape=rect, style=filled];
+57 [class=intent, fillcolor=lightblue, label="Yes\,\ I\ need\ articles\ about\ World\ War", shape=rect, style=filled];
+0 -> 40  [class="", key=0];
+0 -> 41  [class="", key=0];
+1 -> 42  [class="", key=0];
+1 -> 43  [class="", key=0];
+1 -> 44  [class="", key=0];
+1 -> 45  [class="", key=0];
+1 -> 46  [class="", key=0];
+2 -> 3  [class="", key=NONE, label=""];
+3 -> 47  [class="", key=0];
+4 -> 5  [class="", key=NONE, label=""];
+4 -> 48  [class="", key=0];
+4 -> 49  [class="", key=0];
+5 -> 6  [class="", key=NONE, label=""];
+6 -> "-1"  [class="", key=NONE, label=""];
+8 -> 3  [class="", key=NONE, label=""];
+8 -> 15  [class="", key=NONE, label=""];
+15 -> 50  [class="", key=0];
+16 -> 51  [class="", key=0];
+17 -> 3  [class="", key=NONE, label=""];
+20 -> 21  [class="", key=NONE, label=""];
+21 -> 6  [class="", key=NONE, label=""];
+23 -> "-1"  [class="", key=NONE, label=""];
+27 -> 28  [class="", key=NONE, label=""];
+28 -> 52  [class="", key=0];
+29 -> 53  [class="", key=0];
+33 -> 34  [class="", key=NONE, label=""];
+34 -> 54  [class="", key=0];
+35 -> 55  [class="", key=0];
+36 -> 37  [class="", key=NONE, label=""];
+37 -> 56  [class="", key=0];
+38 -> 57  [class="", key=0];
+40 -> 1  [class="", key=0];
+41 -> 23  [class="", key=0];
+42 -> 2  [class="", key=0];
+43 -> 8  [class="", key=0];
+44 -> 27  [class="", key=0];
+45 -> 33  [class="", key=0];
+46 -> 23  [class="", key=0];
+47 -> 4  [class="", key=0];
+48 -> 5  [class="", key=0];
+49 -> 20  [class="", key=0];
+50 -> 16  [class="", key=0];
+51 -> 17  [class="", key=0];
+52 -> 29  [class="", key=0];
+53 -> 5  [class="", key=0];
+54 -> 35  [class="", key=0];
+55 -> 36  [class="", key=0];
+56 -> 38  [class="", key=0];
+57 -> 23  [class="", key=0];
+}
+`;
+    drawGraph(graph);
+  } else {
+    serveGraph();
+  }
+
+
+</script>
+</body>
+</html>

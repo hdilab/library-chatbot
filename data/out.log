@@ -1,0 +1,18 @@
+2019-07-01 18:04:07,402 [ERROR]  Exception occurred while handling uri: 'http://3175f852.ngrok.io/socket.io/?EIO=3&transport=polling&t=Mklnuny'
+Traceback (most recent call last):
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /socket.io/ not found
+2019-07-01 18:04:13,546 [ERROR]  Exception occurred while handling uri: 'http://3175f852.ngrok.io/socket.io/?EIO=3&transport=polling&t=MklnwHz'
+Traceback (most recent call last):
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/app.py", line 893, in handle_request
+    handler, args, kwargs, uri = self.router.get(request)
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/router.py", line 407, in get
+    return self._get(request.path, request.method, "")
+  File "/home/thapaasanjay/anaconda3/envs/chatbot_env/lib/python3.7/site-packages/sanic/router.py", line 469, in _get
+    raise NotFound("Requested URL {} not found".format(url))
+sanic.exceptions.NotFound: Requested URL /socket.io/ not found

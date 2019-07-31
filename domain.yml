@@ -1,0 +1,116 @@
+%YAML 1.1
+---
+actions:
+- action_database_link
+- restart
+- utter_access_CINAHL_database
+- utter_anymore_questions
+- utter_article_type_from_articles
+- utter_ask_again
+- utter_ask_article_for_research_or_project
+- utter_ask_field_of_study
+- utter_default
+- utter_did_that_help
+- utter_did_you_open_link
+- utter_difference_between_qualitative_quantative_articles
+- utter_general_database
+- utter_goodbye
+- utter_gratitude
+- utter_greet
+- utter_happy_to_help
+- utter_input_in_CINAHL
+- utter_more_help_librarian_email
+- utter_my_intro
+- utter_nursing_database
+- utter_nursing_librarians_email
+entities:
+- area_of_study
+- articles_domain
+intents:
+- affirm
+- quantitative_research_article
+- thanks
+- greet
+- choose
+- stop
+- access_CINAHL_database
+- deny
+- difference_between_qualitative_quantative_articles
+- goodbye
+- how_to_know_type_of_articles
+- nursing_librarians_email
+slots:
+  area_of_study:
+    initial_value: Kinesiology
+    type: text
+  articles_domain:
+    initial_value: Nursing
+    type: text
+templates:
+  utter_access_CINAHL_database:
+  - text: "You can open the given link in the new tab to access CINAHL:  https://libguides.uta.edu/cinahl\
+      \ . \nIf you are off-campus, you will be prompted to log in using your NetID\
+      \ username and password."
+  utter_anymore_questions:
+  - text: Do you have any more questions?
+  utter_article_type_from_articles:
+  - text: "They will not always use the words qualitative or quantitative or mixed\
+      \  methods.\n You will need to see how they describe the design in the methodology."
+  utter_ask_again:
+  - text: Okay! Let's start again, please rephrase your question?
+  - text: "No issues! Let's try this again.\n Please repeat your query?"
+  utter_ask_article_for_research_or_project:
+  - text: Are you looking for journal articles for a research paper or project?
+  utter_ask_field_of_study:
+  - buttons:
+    - payload: '/choose{"area_of_study": "kinesiology"}'
+      title: Kinesiology
+    - payload: '/choose{"area_of_study": "data"}'
+      title: Data
+    - payload: '/choose{"area_of_study": "nursing"}'
+      title: Nursing
+    - payload: '/choose{"area_of_study": "others"}'
+      title: Others
+    text: What are you studying?
+  utter_default:
+  - text: "Sorry, I did not understand you. Please rephrase your question."
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_did_you_open_link:
+  - text: Did you open the link?
+  utter_difference_between_qualitative_quantative_articles:
+  - text: "Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553\
+      \ \n There is a lot of good content in the guide"
+  utter_general_database:
+  - text: 'Please open this link in new tab: https://libguides.uta.edu/quantitative_and_qualitative_research'
+  utter_goodbye:
+  - text: Bye
+  utter_gratitude:
+  - text: Glad that I could be of help to you!
+  utter_greet:
+  - text: "Hey! What can I do for you? \nSelect an option below or type your question below."
+    buttons:
+    - title: "How can I access CINAHL database?"
+      payload: '/access_CINAHL_database'
+    - title: "What is the difference between quantitative and qualitative articles?"
+      payload: '/difference_between_qualitative_quantative_articles'
+    - title: "How can I find research articles?"
+      payload: '/quantitative_research_article'
+  utter_happy_to_help:
+  - text: Hi ! I would be happy to help you.
+  utter_input_in_CINAHL:
+  - text: "Input a search with terms that may be found in the resources you are looking\
+      \ for. Combine like-terms with OR.\n An example search is youth OR adolescent\
+      \ OR teen OR teenager."
+  utter_more_help_librarian_email:
+  - text: If you need more help, you can email at peace@uta.edu.
+  utter_my_intro:
+  - text: Hi there, I am a nursing bot. How can I help you?
+  utter_nursing_database:
+  - text: "Please open this link in new tab: https://libguides.uta.edu/quantitative_and_qualitative_research.\
+      \ \nThe first link on that page is for the database CINAHL, open that in its\
+      \ own tab. \nYou'll probably need to log in using your UTA Net ID. Once you\
+      \ enter your Net ID and password, \nsearch with the general search terms"
+  utter_nursing_librarians_email:
+  - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
+  - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
