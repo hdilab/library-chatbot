@@ -1,5 +1,6 @@
 # UT Arlington Library Chatbot
 
+The chatbot is being created to assist students and guests visiting the website of library of the University of Texas at Arlington.
 
 Here, the [Rasa](https://rasa.com/docs/rasa/) framework is used to create a chatbot. For the project, conda is used as a package manager, and Rasa is installed inside a conda environment. 
 
