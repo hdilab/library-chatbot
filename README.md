@@ -1,7 +1,7 @@
 # UT Arlington Library Chatbot
 
 
-In this project, the [Rasa](https://rasa.com/docs/rasa/) framework is used to create a chatbot. You can create a conda environment, and then install rasa inside your conda environment via pip.
+In this project, the [Rasa](https://rasa.com/docs/rasa/) framework is used to create a chatbot. For the project, Rasa is installed inside a conda environment. 
 
 > **Instructions to install Rasa:**
 > - Create a separate conda environment. If you need instructions to create a conda environment, please follow the link [here](https://docs.conda.io/projects/conda/en/latest/user-guide/overview.html).
