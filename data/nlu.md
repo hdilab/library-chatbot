@@ -24,8 +24,6 @@
 - yes, I am looking articles on [Literature](articles_domain)
 - Yes, I need articles about [World War](articles_domain)
 - Yes, I need articles about [World War](articles_domain)
-- yes
-- Yes,
 - Yes,
 - Sure
 
@@ -75,14 +73,7 @@
 - hey there
 - Hello
 - Hi
-- hi
-- Hi
-- Hi
-- Hi
-- Hi
-- Hi
 - HI
-- hi
 
 ## intent:how_to_know_type_of_articles
 - how can I recognize that an Article is in Qualitative or Quantitative or Mixed Method?
@@ -92,6 +83,13 @@
 - is this article quantitative or qualitative ?
 - how to know the type of articles?
 - how to know types of articles
+
+## intent:libraries_hours
+- What is the hour of Fablab?
+- What is the hour of Central Library?
+- Is central library still open?
+- Is Fablab still open?
+- What is the hour of ARCHITECTURE & FINE ARTS LIBRARY ?
 
 ## intent:nursing_librarians_email
 - can you give me the email of one of the nursing librarians?

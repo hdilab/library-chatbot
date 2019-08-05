@@ -38,6 +38,7 @@ intents:
 - difference_between_qualitative_quantative_articles
 - goodbye
 - how_to_know_type_of_articles
+- libraries_hours
 - nursing_librarians_email
 slots:
   area_of_study:
