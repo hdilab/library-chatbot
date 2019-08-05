@@ -13,6 +13,6 @@ Once you are able to see the version number with the command **$rasa --version**
 
 > **Starting a Rasa project:**
 > - Create a rasa project with the command **$rasa init --no-prompt**
-> - The command will create the folowing files: __init__.py, pycache, actions.py, config.yml, credentials.yml, domain.yml, and endpoints.yml, and the following folders: data and models.
+> - The command will create the folowing files: __init__.py, actions.py, config.yml, credentials.yml, domain.yml, and endpoints.yml, and the following folders: data and models.
 
 The training data for the chatbot will be provided inside **data > nlu.md**, and sample paths of conversations will be saved inside **data > stories.md**. Additionally the trained models will be stored in the **models** directory.
