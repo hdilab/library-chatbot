@@ -8,4 +8,5 @@ In this project, a chatbot is created is made using the [Rasa](https://rasa.com/
 > - Activate your conda environment
 > - Install Rasa framework via **$pip install rasa**
 > - Check the version of rasa installed with the command **$rasa --version**
-#### Once you are able to see the version number with the command **$rasa --version**, then you are ready to start a rasa project.
+
+Once you are able to see the version number with the command **$rasa --version**, then you are ready to start a rasa project.
