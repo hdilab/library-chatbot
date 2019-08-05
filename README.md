@@ -13,6 +13,4 @@ Once you are able to see the version number with the command **$rasa --version**
 
 > **Starting a Rasa project:**
 > - Create a rasa project with the command **$rasa init --no-prompt**
-> - The following files will be created with the above command.
-> * Install Rasa framework via **$pip install rasa**
-> * Check the version of rasa installed with the command **$rasa --version**
+> - The command will create the folowing files __init__.py, __pycache__, actions.py, config.yml, credentials.yml, domain.yml, and endpoints.yml, and the following folders:data and models
