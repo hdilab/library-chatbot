@@ -10,3 +10,9 @@ In this project, the [Rasa](https://rasa.com/docs/rasa/) framework is used to cr
 > - Check the version of rasa installed with the command **$rasa --version**
 
 Once you are able to see the version number with the command **$rasa --version**, then you are ready to start a rasa project.
+
+> **Starting a Rasa project:**
+> - Create a rasa project with the command **$rasa init --no-prompt**
+> - The following files will be created with the above command.
+> --Install Rasa framework via **$pip install rasa**
+> -- Check the version of rasa installed with the command **$rasa --version**
