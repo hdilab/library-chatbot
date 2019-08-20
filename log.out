@@ -1,0 +1,856 @@
+2019-08-20 12:22:47,169 [INFO ]  Server initialized for sanic.
+2019-08-20 12:22:47,172 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-20 12:22:51,410 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet OPEN data {'sid': '49fc799d3cf34f4b903b348642bccfc5', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:22:51,410 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet MESSAGE data 0
+2019-08-20 12:22:51,415 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet OPEN data {'sid': 'a2eeb2d3be134e4b8bd05c6be0709e21', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:22:51,415 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet MESSAGE data 0
+2019-08-20 12:22:51,424 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received request to upgrade to websocket
+2019-08-20 12:22:51,427 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet MESSAGE data 2["session_request",{"session_id":null}]
+2019-08-20 12:22:51,428 [INFO ]  received event "session_request" from 49fc799d3cf34f4b903b348642bccfc5 [/]
+2019-08-20 12:22:51,428 [INFO ]  emitting event "session_confirm" to 49fc799d3cf34f4b903b348642bccfc5 [/]
+2019-08-20 12:22:51,429 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet MESSAGE data 2["session_confirm","1b57f75046f544e199a87ad8c5bcacd4"]
+2019-08-20 12:22:51,438 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received request to upgrade to websocket
+2019-08-20 12:22:51,441 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet MESSAGE data 2["session_request",{"session_id":null}]
+2019-08-20 12:22:51,442 [INFO ]  received event "session_request" from a2eeb2d3be134e4b8bd05c6be0709e21 [/]
+2019-08-20 12:22:51,443 [INFO ]  emitting event "session_confirm" to a2eeb2d3be134e4b8bd05c6be0709e21 [/]
+2019-08-20 12:22:51,443 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet MESSAGE data 2["session_confirm","da131cf934944e6394b1ab6d92ba2374"]
+2019-08-20 12:22:51,449 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Upgrade to websocket successful
+2019-08-20 12:22:51,449 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Upgrade to websocket successful
+2019-08-20 12:23:07,440 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Sending packet OPEN data {'sid': 'ee3a372d13be4a7f8c10367ccfcb84f3', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:23:07,440 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Sending packet MESSAGE data 0
+2019-08-20 12:23:07,464 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:23:07,464 [INFO ]  received event "session_request" from ee3a372d13be4a7f8c10367ccfcb84f3 [/]
+2019-08-20 12:23:07,465 [INFO ]  emitting event "session_confirm" to ee3a372d13be4a7f8c10367ccfcb84f3 [/]
+2019-08-20 12:23:07,466 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Received request to upgrade to websocket
+2019-08-20 12:23:07,467 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:23:07,471 [INFO ]  ee3a372d13be4a7f8c10367ccfcb84f3: Upgrade to websocket successful
+2019-08-20 12:23:12,747 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Sending packet OPEN data {'sid': '4b3eb8c2ad134d70aa1d61bbcaafc9d0', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:23:12,748 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Sending packet MESSAGE data 0
+2019-08-20 12:23:12,763 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:23:12,764 [INFO ]  received event "session_request" from 4b3eb8c2ad134d70aa1d61bbcaafc9d0 [/]
+2019-08-20 12:23:12,764 [INFO ]  emitting event "session_confirm" to 4b3eb8c2ad134d70aa1d61bbcaafc9d0 [/]
+2019-08-20 12:23:12,765 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:23:12,766 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Received request to upgrade to websocket
+2019-08-20 12:23:12,820 [INFO ]  4b3eb8c2ad134d70aa1d61bbcaafc9d0: Upgrade to websocket successful
+2019-08-20 12:23:16,613 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:23:16,613 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:23:16,622 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:23:16,622 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:23:16,697 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet OPEN data {'sid': 'e2a2a4f4e1ff4c7086c8defe118e9198', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:23:16,697 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet MESSAGE data 0
+2019-08-20 12:23:16,712 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:23:16,712 [INFO ]  received event "session_request" from e2a2a4f4e1ff4c7086c8defe118e9198 [/]
+2019-08-20 12:23:16,714 [INFO ]  emitting event "session_confirm" to e2a2a4f4e1ff4c7086c8defe118e9198 [/]
+2019-08-20 12:23:16,715 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:23:16,715 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received request to upgrade to websocket
+2019-08-20 12:23:16,727 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Upgrade to websocket successful
+2019-08-20 12:23:42,304 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:23:42,304 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:23:42,305 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:23:42,305 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:23:42,363 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:23:42,364 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:23:51,589 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet OPEN data {'sid': '9ae6317f0bf54e90aef12640bf5d91f4', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:23:51,589 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet MESSAGE data 0
+2019-08-20 12:23:51,605 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received request to upgrade to websocket
+2019-08-20 12:23:51,608 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:23:51,609 [INFO ]  received event "session_request" from 9ae6317f0bf54e90aef12640bf5d91f4 [/]
+2019-08-20 12:23:51,610 [INFO ]  emitting event "session_confirm" to 9ae6317f0bf54e90aef12640bf5d91f4 [/]
+2019-08-20 12:23:51,610 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:23:51,613 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Upgrade to websocket successful
+2019-08-20 12:24:07,441 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:24:07,442 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:24:07,445 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:24:07,445 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:24:07,446 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:24:07,446 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:24:17,448 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:24:17,448 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:24:22,416 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet OPEN data {'sid': '211415c60abb441f9cc8ee1458f7ec42', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:24:22,417 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 0
+2019-08-20 12:24:22,436 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received request to upgrade to websocket
+2019-08-20 12:24:22,446 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Upgrade to websocket successful
+2019-08-20 12:24:25,241 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"Hi","customData":{"userId":"123"}}]
+2019-08-20 12:24:25,241 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:25,603 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:25,604 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:24:31,142 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:24:31,142 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:31,149 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:31,150 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:24:31,155 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:31,155 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:24:33,449 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:24:33,450 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:24:33,450 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:24:33,451 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:24:33,605 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:24:33,605 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:24:36,213 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"Yes","customData":{"userId":"123"}}]
+2019-08-20 12:24:36,214 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:36,221 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:36,221 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:24:39,725 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"chemistry\"}","customData":{"userId":"123"}}]
+2019-08-20 12:24:39,726 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:39,856 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:39,856 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening this link: https://libguides.uta.edu/CHEMInfo. Once you open the link,             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database             are also listed here."}]
+2019-08-20 12:24:39,861 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:39,861 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:24:43,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:24:43,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:24:47,437 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:24:47,437 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:24:59,137 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:24:59,142 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:24:59,146 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:24:59,146 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:24:59,147 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:24:59,147 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:24:59,337 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:24:59,338 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:59,345 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:24:59,346 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at peace@uta.edu."}]
+2019-08-20 12:25:07,299 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet MESSAGE data 2["user_uttered",{"message":"Thanks","customData":{"userId":"123"}}]
+2019-08-20 12:25:07,300 [INFO ]  received event "user_uttered" from 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:25:07,309 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:25:07,309 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:25:07,315 [INFO ]  emitting event "bot_uttered" to 211415c60abb441f9cc8ee1458f7ec42 [/]
+2019-08-20 12:25:07,316 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet MESSAGE data 2["bot_uttered",{"text":"Click the button below to start the conversation again.","quick_replies":[{"content_type":"text","title":"Start Over","payload":"/greet"}]}]
+2019-08-20 12:25:09,445 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:25:09,445 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:25:13,158 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:25:13,159 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:25:24,439 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:25:24,439 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:25:24,439 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:25:24,439 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:25:24,443 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:25:24,444 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:25:35,444 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:25:35,444 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:25:38,894 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:25:38,894 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:25:49,472 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:25:49,484 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:25:49,485 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:25:49,485 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:25:49,510 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:25:49,510 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:26:00,446 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:26:00,446 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:26:04,301 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:26:04,301 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:26:15,465 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:26:15,466 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:26:15,505 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:26:15,505 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:26:15,506 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:26:15,506 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:26:26,445 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:26:26,445 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:26:29,768 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:26:29,768 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:26:41,480 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:26:41,481 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:26:41,481 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:26:41,481 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:26:41,488 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:26:41,489 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:26:52,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:26:52,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:26:55,268 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:26:55,268 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:27:07,365 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:27:07,369 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:27:07,369 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:27:07,370 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:27:07,399 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:27:07,400 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:27:18,441 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:27:18,441 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:27:21,885 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:27:21,886 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:27:32,500 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:27:32,500 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:27:32,514 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:27:32,514 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:27:32,515 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:27:32,516 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:27:44,439 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:27:44,445 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:27:47,461 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:27:47,461 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:27:58,461 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:27:58,462 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:27:58,473 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:27:58,474 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:27:58,474 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:27:58,475 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:28:10,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:28:10,443 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:28:13,769 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:28:13,770 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:28:23,467 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:28:23,468 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:28:24,440 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:28:24,441 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:28:24,441 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:28:24,441 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:28:35,446 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:28:35,446 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:28:38,801 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:28:38,801 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:28:49,213 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Received packet PING data None
+2019-08-20 12:28:49,213 [INFO ]  e2a2a4f4e1ff4c7086c8defe118e9198: Sending packet PONG data None
+2019-08-20 12:28:50,552 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Received packet PING data None
+2019-08-20 12:28:50,553 [INFO ]  49fc799d3cf34f4b903b348642bccfc5: Sending packet PONG data None
+2019-08-20 12:28:50,553 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Received packet PING data None
+2019-08-20 12:28:50,554 [INFO ]  a2eeb2d3be134e4b8bd05c6be0709e21: Sending packet PONG data None
+2019-08-20 12:29:01,412 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Received packet PING data None
+2019-08-20 12:29:01,412 [INFO ]  9ae6317f0bf54e90aef12640bf5d91f4: Sending packet PONG data None
+2019-08-20 12:29:04,368 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Received packet PING data None
+2019-08-20 12:29:04,368 [INFO ]  211415c60abb441f9cc8ee1458f7ec42: Sending packet PONG data None
+2019-08-20 12:29:07,253 [ERROR]  Task was destroyed but it is pending!
+task: <Task pending coro=<AsyncServer._service_task() running at /Users/sanjay/anaconda3/envs/rasa_envs/lib/python3.6/site-packages/engineio/asyncio_server.py:433> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x132990a08>()]>>
+2019-08-20 12:29:07,254 [INFO ]  event loop is closed, exiting service task
+2019-08-20 12:29:41,736 [INFO ]  Server initialized for sanic.
+2019-08-20 12:29:41,739 [INFO ]  Starting Rasa server on http://localhost:5005
+2019-08-20 12:29:44,140 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet OPEN data {'sid': 'e5d79ac23c2f4e19bb5642c87a42b5cd', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:29:44,140 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet MESSAGE data 0
+2019-08-20 12:29:44,143 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Sending packet OPEN data {'sid': '9a6508d859b1415c99a761324d6c5b1d', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:29:44,144 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Sending packet MESSAGE data 0
+2019-08-20 12:29:44,149 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Received request to upgrade to websocket
+2019-08-20 12:29:44,151 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Received packet MESSAGE data 2["session_request",{"session_id":null}]
+2019-08-20 12:29:44,151 [INFO ]  received event "session_request" from 9a6508d859b1415c99a761324d6c5b1d [/]
+2019-08-20 12:29:44,152 [INFO ]  emitting event "session_confirm" to 9a6508d859b1415c99a761324d6c5b1d [/]
+2019-08-20 12:29:44,153 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Sending packet MESSAGE data 2["session_confirm","66f2ed2a97db42af8d1b7777260f29f7"]
+2019-08-20 12:29:44,154 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received request to upgrade to websocket
+2019-08-20 12:29:44,155 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:29:44,155 [INFO ]  received event "session_request" from e5d79ac23c2f4e19bb5642c87a42b5cd [/]
+2019-08-20 12:29:44,156 [INFO ]  emitting event "session_confirm" to e5d79ac23c2f4e19bb5642c87a42b5cd [/]
+2019-08-20 12:29:44,156 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:29:44,160 [INFO ]  9a6508d859b1415c99a761324d6c5b1d: Upgrade to websocket successful
+2019-08-20 12:29:44,160 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Upgrade to websocket successful
+2019-08-20 12:29:45,140 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet OPEN data {'sid': 'f8ff17e0cd93486689fff3abc8bbdda9', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:29:45,141 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 0
+2019-08-20 12:29:45,151 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received request to upgrade to websocket
+2019-08-20 12:29:45,154 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Upgrade to websocket successful
+2019-08-20 12:29:47,616 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Sending packet OPEN data {'sid': '16e0e6b396124787bc62601207ce0dcb', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:29:47,616 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Sending packet MESSAGE data 0
+2019-08-20 12:29:47,645 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Received request to upgrade to websocket
+2019-08-20 12:29:47,646 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Received packet MESSAGE data 2["session_request",{"session_id":null}]
+2019-08-20 12:29:47,646 [INFO ]  received event "session_request" from 16e0e6b396124787bc62601207ce0dcb [/]
+2019-08-20 12:29:47,647 [INFO ]  emitting event "session_confirm" to 16e0e6b396124787bc62601207ce0dcb [/]
+2019-08-20 12:29:47,647 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Sending packet MESSAGE data 2["session_confirm","c2a32660c59341ab9bdf1e3a8a508f07"]
+2019-08-20 12:29:47,649 [INFO ]  16e0e6b396124787bc62601207ce0dcb: Upgrade to websocket successful
+2019-08-20 12:29:49,146 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet OPEN data {'sid': 'afd639d26247424eb4303bc69b113607', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:29:49,146 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet MESSAGE data 0
+2019-08-20 12:29:49,161 [INFO ]  afd639d26247424eb4303bc69b113607: Received request to upgrade to websocket
+2019-08-20 12:29:49,162 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:29:49,162 [INFO ]  received event "session_request" from afd639d26247424eb4303bc69b113607 [/]
+2019-08-20 12:29:49,163 [INFO ]  emitting event "session_confirm" to afd639d26247424eb4303bc69b113607 [/]
+2019-08-20 12:29:49,163 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:29:49,167 [INFO ]  afd639d26247424eb4303bc69b113607: Upgrade to websocket successful
+2019-08-20 12:30:10,354 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:30:10,354 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:30:11,625 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:30:11,625 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:30:14,463 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:30:14,464 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:30:35,442 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:30:35,442 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:30:37,736 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:30:37,737 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:30:39,468 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:30:39,468 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:31:01,399 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:31:01,399 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:31:03,134 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:31:03,135 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:31:05,135 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:31:05,135 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:31:13,998 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"/greet","customData":{"userId":"123"}}]
+2019-08-20 12:31:13,998 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:14,278 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:14,278 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:31:18,500 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:31:18,500 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:18,507 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:18,508 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:31:18,513 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:18,513 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:31:27,199 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:31:27,200 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:31:28,136 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:31:28,136 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:31:28,335 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"Yes","customData":{"userId":"123"}}]
+2019-08-20 12:31:28,335 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:28,396 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:28,397 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:31:30,340 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:31:30,341 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:31:30,402 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"others\"}","customData":{"userId":"123"}}]
+2019-08-20 12:31:30,402 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:30,540 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:30,540 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening the link: https://libguides.uta.edu/sb.php.             Please select a subject from the dropdown, and you will be guided to the homepage of the subject. Click on the database tab, and             you may select one of the database  with the Best Bets. Additional database are also listed here."}]
+2019-08-20 12:31:30,546 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:31:30,547 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:31:53,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:31:53,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:31:54,627 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:31:54,627 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:31:55,371 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:31:55,372 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:32:19,401 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:32:19,401 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:32:20,507 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:32:20,508 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:32:20,878 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:32:20,879 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:32:45,360 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:32:45,361 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:32:46,134 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:32:46,134 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:32:46,483 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:32:46,483 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:33:10,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:33:10,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:33:12,447 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:33:12,448 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:33:12,797 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:33:12,797 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:33:29,121 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:33:29,121 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:29,132 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:29,132 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at askus@uta.edu."}]
+2019-08-20 12:33:34,918 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"Thanks","customData":{"userId":"123"}}]
+2019-08-20 12:33:34,918 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:34,928 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:34,928 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:33:36,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:33:36,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:33:37,467 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:33:37,467 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:33:37,804 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet PING data None
+2019-08-20 12:33:37,804 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet PONG data None
+2019-08-20 12:33:38,895 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:33:38,895 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:38,903 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:38,903 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:33:44,866 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:33:44,866 [INFO ]  received event "user_uttered" from f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:44,875 [INFO ]  emitting event "bot_uttered" to f8ff17e0cd93486689fff3abc8bbdda9 [/]
+2019-08-20 12:33:44,875 [INFO ]  f8ff17e0cd93486689fff3abc8bbdda9: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:33:51,064 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet OPEN data {'sid': '0da10fd91f484b16b897c44f1c36912f', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:33:51,065 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 0
+2019-08-20 12:33:51,083 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received request to upgrade to websocket
+2019-08-20 12:33:51,088 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Upgrade to websocket successful
+2019-08-20 12:33:52,825 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"Hi","customData":{"userId":"123"}}]
+2019-08-20 12:33:52,825 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:52,833 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:52,833 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:33:55,489 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:33:55,489 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:55,495 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:55,495 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:33:55,500 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:55,500 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:33:59,832 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:33:59,832 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:59,841 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:33:59,841 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:34:02,117 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"english\"}","customData":{"userId":"123"}}]
+2019-08-20 12:34:02,117 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:02,129 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:02,129 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening the link: https://libguides.uta.edu/sb.php.             Please select a subject from the dropdown, and you will be guided to the homepage of the subject. Click on the database tab, and             you may select one of the database  with the Best Bets. Additional database are also listed here."}]
+2019-08-20 12:34:02,136 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:02,137 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:34:02,145 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:34:02,145 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:34:03,135 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:34:03,135 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:34:07,500 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:34:07,501 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:07,509 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:07,510 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at askus@uta.edu."}]
+2019-08-20 12:34:12,654 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"Thanks","customData":{"userId":"123"}}]
+2019-08-20 12:34:12,654 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:12,663 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:12,664 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:34:16,077 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet PING data None
+2019-08-20 12:34:16,077 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet PONG data None
+2019-08-20 12:34:26,930 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:34:26,931 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:26,939 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:26,940 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:34:27,166 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:34:27,166 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:34:28,421 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:34:28,421 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:34:30,960 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"Hi","customData":{"userId":"123"}}]
+2019-08-20 12:34:30,961 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:30,969 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:34:30,969 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:34:41,079 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet PING data None
+2019-08-20 12:34:41,080 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet PONG data None
+2019-08-20 12:34:52,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:34:52,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:34:53,468 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:34:53,468 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:35:06,462 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet PING data None
+2019-08-20 12:35:06,462 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet PONG data None
+2019-08-20 12:35:18,441 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:35:18,441 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:35:19,136 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:35:19,138 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:35:25,200 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:35:25,200 [INFO ]  received event "user_uttered" from 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:35:25,209 [INFO ]  emitting event "bot_uttered" to 0da10fd91f484b16b897c44f1c36912f [/]
+2019-08-20 12:35:25,210 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet MESSAGE data 2["bot_uttered",{"text":"Sorry, I did not understand you. Please rephrase your question."}]
+2019-08-20 12:35:31,465 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Received packet PING data None
+2019-08-20 12:35:31,465 [INFO ]  0da10fd91f484b16b897c44f1c36912f: Sending packet PONG data None
+2019-08-20 12:35:35,977 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet OPEN data {'sid': '2deb3c10df9b47ac87554bf3823eff51', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:35:35,978 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 0
+2019-08-20 12:35:35,997 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received request to upgrade to websocket
+2019-08-20 12:35:36,003 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Upgrade to websocket successful
+2019-08-20 12:35:38,218 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"Hi","customData":{"userId":"123"}}]
+2019-08-20 12:35:38,218 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:38,225 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:38,226 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:35:40,498 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:35:40,498 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:40,505 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:40,505 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:35:40,510 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:40,510 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:35:44,326 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:35:44,327 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:35:44,327 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:35:44,327 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:35:45,914 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:35:45,914 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:45,922 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:45,922 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:35:48,868 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"history\"}","customData":{"userId":"123"}}]
+2019-08-20 12:35:48,873 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:48,884 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:48,884 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening this link: https://libguides.uta.edu/HistoryInfo. Once you open the link,             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database             are also listed here."}]
+2019-08-20 12:35:48,890 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:48,890 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:35:52,540 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:35:52,540 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:52,549 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:35:52,550 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at askus@uta.edu."}]
+2019-08-20 12:36:01,138 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:36:01,139 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:36:06,265 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:36:06,265 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:06,275 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:06,275 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:36:06,281 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:06,282 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Click the button below to start the conversation again.","quick_replies":[{"content_type":"text","title":"Start Over","payload":"/greet"}]}]
+2019-08-20 12:36:09,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:36:09,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:36:09,510 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:36:09,510 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:36:26,143 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:36:26,143 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:36:35,444 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:36:35,445 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:36:35,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:36:35,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:36:40,517 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/greet","customData":{"userId":"123"}}]
+2019-08-20 12:36:40,518 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:40,524 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:40,524 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:36:44,391 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:36:44,391 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:44,398 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:44,398 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:36:44,403 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:44,403 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:36:49,901 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:36:49,902 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:49,909 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:49,909 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:36:51,150 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:36:51,150 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:36:52,483 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"nursing\"}","customData":{"userId":"123"}}]
+2019-08-20 12:36:52,483 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:52,495 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:52,496 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend searching CINAHL database at https://libguides.uta.edu/cinahl                                     If you are off-campus, you will be prompted to log in using your NetID username                                    and password. Also, you can open this link: https://libguides.uta.edu/NursingInfo. Once you open the link,                                     click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database                                     are also listed here."}]
+2019-08-20 12:36:52,500 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:36:52,500 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:37:00,464 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:37:00,464 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:37:01,441 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:37:01,442 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:37:02,570 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:37:02,571 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:37:02,579 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:37:02,580 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at askus@uta.edu."}]
+2019-08-20 12:37:05,836 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:37:05,836 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:37:05,845 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:37:05,846 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:37:05,851 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:37:05,851 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Click the button below to start the conversation again.","quick_replies":[{"content_type":"text","title":"Start Over","payload":"/greet"}]}]
+2019-08-20 12:37:16,155 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:37:16,155 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:37:25,469 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:37:25,469 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:37:27,364 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:37:27,364 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:37:41,160 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:37:41,160 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:37:51,135 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:37:51,136 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:37:52,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:37:52,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:38:06,167 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:38:06,167 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:38:16,443 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:38:16,444 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:38:18,443 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:38:18,443 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:38:31,213 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:38:31,213 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:38:37,660 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/greet","customData":{"userId":"123"}}]
+2019-08-20 12:38:37,661 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:37,667 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:37,668 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:38:42,490 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:38:42,491 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:42,499 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:42,499 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:38:42,505 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:42,505 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:38:42,609 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:38:42,610 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:38:43,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:38:43,447 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:38:48,714 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:38:48,714 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:48,724 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:48,725 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:38:53,962 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"business\"}","customData":{"userId":"123"}}]
+2019-08-20 12:38:53,962 [INFO ]  received event "user_uttered" from 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:53,978 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:53,978 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening this link: https://libguides.uta.edu/BusinessInfo. Once you open the link,             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database             are also listed here."}]
+2019-08-20 12:38:53,984 [INFO ]  emitting event "bot_uttered" to 2deb3c10df9b47ac87554bf3823eff51 [/]
+2019-08-20 12:38:53,984 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:38:56,218 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:38:56,218 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:39:08,447 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:39:08,447 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:39:08,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:39:08,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:39:21,222 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Received packet PING data None
+2019-08-20 12:39:21,222 [INFO ]  2deb3c10df9b47ac87554bf3823eff51: Sending packet PONG data None
+2019-08-20 12:39:30,096 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet OPEN data {'sid': '72edbfc335044f9da8e1163d0d13b0bc', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:39:30,097 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 0
+2019-08-20 12:39:30,117 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received request to upgrade to websocket
+2019-08-20 12:39:30,125 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Upgrade to websocket successful
+2019-08-20 12:39:34,443 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:39:34,443 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:39:34,501 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:39:34,502 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:39:55,121 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:39:55,121 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:40:00,441 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:40:00,441 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:40:00,468 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:40:00,468 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:40:20,124 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:40:20,137 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:40:25,444 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:40:25,444 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:40:26,467 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:40:26,467 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:40:45,140 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:40:45,140 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:40:51,428 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:40:51,428 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:40:51,469 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:40:51,469 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:41:10,148 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:41:10,148 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:41:16,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:41:16,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:41:16,471 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:41:16,472 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:41:18,428 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"Hi","customData":{"userId":"123"}}]
+2019-08-20 12:41:18,429 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:18,435 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:18,435 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:41:25,716 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"/quantitative_research_article","customData":{"userId":"123"}}]
+2019-08-20 12:41:25,716 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:25,723 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:25,723 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hi ! I would be happy to help you."}]
+2019-08-20 12:41:25,728 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:25,728 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Are you looking for journal articles for a research paper or project?"}]
+2019-08-20 12:41:29,629 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:41:29,630 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:29,637 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:29,638 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"What are you studying?","quick_replies":[{"content_type":"text","title":"Nursing","payload":"/choose{\"area_of_study\": \"nursing\"}"},{"content_type":"text","title":"Social Work","payload":"/choose{\"area_of_study\": \"social_work\"}"},{"content_type":"text","title":"Business","payload":"/choose{\"area_of_study\": \"business\"}"},{"content_type":"text","title":"History","payload":"/choose{\"area_of_study\": \"history\"}"},{"content_type":"text","title":"English","payload":"/choose{\"area_of_study\": \"english\"}"},{"content_type":"text","title":"Chemistry","payload":"/choose{\"area_of_study\": \"chemistry\"}"},{"content_type":"text","title":"Others","payload":"/choose{\"area_of_study\": \"others\"}"}]}]
+2019-08-20 12:41:34,316 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"/choose{\"area_of_study\": \"others\"}","customData":{"userId":"123"}}]
+2019-08-20 12:41:34,317 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:34,330 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:34,330 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"In that case, I recommend opening the link: https://libguides.uta.edu/sb.php.             Please select a subject from the dropdown, and you will be guided to the homepage of the subject. Click on the database tab, and             you may select one of the database  with the Best Bets. Additional database are also listed here."}]
+2019-08-20 12:41:34,335 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:41:34,335 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:41:35,153 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:41:35,153 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:41:42,135 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:41:42,135 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:41:42,186 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:41:42,187 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:42:01,135 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:42:01,135 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:42:07,400 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:42:07,400 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:42:07,400 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:42:07,400 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:42:26,466 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:42:26,466 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:42:33,387 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:42:33,387 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:42:33,566 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:42:33,566 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:42:36,239 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"yes","customData":{"userId":"123"}}]
+2019-08-20 12:42:36,240 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:42:36,248 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:42:36,248 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"If you need more help, you can email at askus@uta.edu."}]
+2019-08-20 12:42:51,472 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:42:51,472 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:42:58,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:42:58,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:42:59,465 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:42:59,466 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:43:16,476 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:43:16,476 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:43:24,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:43:24,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:43:25,465 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:43:25,465 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:43:41,481 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:43:41,481 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:43:49,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:43:49,456 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:43:51,504 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:43:51,505 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:44:07,465 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:44:07,465 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:44:15,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:44:15,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:44:17,446 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:44:17,447 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:44:33,504 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:44:33,504 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:44:41,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:44:41,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:44:42,468 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:44:42,478 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:44:58,508 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:44:58,508 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:45:06,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:45:06,461 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:45:08,607 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:45:08,608 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:45:24,465 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:45:24,465 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:45:32,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:45:32,446 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:45:34,468 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:45:34,469 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:45:49,617 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:45:49,618 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:45:57,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:45:57,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:45:59,472 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:45:59,473 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:46:15,445 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:46:15,446 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:46:23,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:46:23,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:46:25,502 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:46:25,502 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:46:40,469 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:46:40,469 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:46:49,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:46:49,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:46:51,136 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:46:51,136 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:47:05,477 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:47:05,477 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:47:08,662 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"bye","customData":{"userId":"123"}}]
+2019-08-20 12:47:08,662 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:08,670 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:08,671 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Bye"}]
+2019-08-20 12:47:08,676 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:08,677 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Click the button below to start the conversation again.","quick_replies":[{"content_type":"text","title":"Start Over","payload":"/greet"}]}]
+2019-08-20 12:47:11,583 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"/greet","customData":{"userId":"123"}}]
+2019-08-20 12:47:11,584 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:11,590 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:11,590 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Hey! What can I do for you? \nSelect an option below or type your question below.","quick_replies":[{"content_type":"text","title":"How can I access CINAHL database?","payload":"/access_CINAHL_database"},{"content_type":"text","title":"What is the difference between quantitative and qualitative articles?","payload":"/difference_between_qualitative_quantative_articles"},{"content_type":"text","title":"How can I find research articles?","payload":"/quantitative_research_article"},{"content_type":"text","title":"How can I find RN to BSN program homepage?","payload":"/find_RN_to_BSN_program_homepage"},{"content_type":"text","title":"Where can I find the plagiarism tutorial?","payload":"/plagiarism_tutorial_in"}]}]
+2019-08-20 12:47:15,402 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:47:15,402 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:47:15,977 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet MESSAGE data 2["user_uttered",{"message":"/plagiarism_tutorial_in","customData":{"userId":"123"}}]
+2019-08-20 12:47:15,978 [INFO ]  received event "user_uttered" from 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:15,984 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:15,984 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Please proceed to [Acknowledging Sources](http://library.uta.edu/plagiarism/index.html) in the new tab. \n To send your quiz results at the end, be sure to use your mavs.uta.edu email address."}]
+2019-08-20 12:47:15,989 [INFO ]  emitting event "bot_uttered" to 72edbfc335044f9da8e1163d0d13b0bc [/]
+2019-08-20 12:47:15,989 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet MESSAGE data 2["bot_uttered",{"text":"Did that help you?"}]
+2019-08-20 12:47:16,625 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:47:16,626 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:47:31,135 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:47:31,136 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:47:40,444 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:47:40,444 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:47:42,464 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:47:42,465 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:47:56,443 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:47:56,444 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:48:05,449 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:48:05,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:48:07,585 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:48:07,585 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:48:22,363 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:48:22,363 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:48:31,436 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:48:31,436 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:48:33,443 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:48:33,443 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:48:47,365 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Received packet PING data None
+2019-08-20 12:48:47,365 [INFO ]  72edbfc335044f9da8e1163d0d13b0bc: Sending packet PONG data None
+2019-08-20 12:48:57,225 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:48:57,225 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:48:59,135 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:48:59,136 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:49:23,367 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:49:23,367 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:49:24,373 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:49:24,374 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:49:48,426 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:49:48,426 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:49:49,433 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:49:49,433 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:50:14,405 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:50:14,406 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:50:14,465 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:50:14,466 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:50:39,442 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:50:39,442 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:50:39,469 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:50:39,469 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:51:04,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:51:04,445 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:51:04,472 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:51:04,472 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:51:30,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:51:30,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:51:30,459 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:51:30,459 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:51:56,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:51:56,455 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:51:56,502 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:51:56,503 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:52:21,513 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:52:21,519 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:52:22,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:52:22,437 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:52:47,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:52:47,450 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:52:47,465 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:52:47,465 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:53:12,454 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:53:12,460 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:53:13,297 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:53:13,298 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:53:38,429 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Received packet PING data None
+2019-08-20 12:53:38,435 [INFO ]  e5d79ac23c2f4e19bb5642c87a42b5cd: Sending packet PONG data None
+2019-08-20 12:53:38,472 [INFO ]  afd639d26247424eb4303bc69b113607: Received packet PING data None
+2019-08-20 12:53:38,472 [INFO ]  afd639d26247424eb4303bc69b113607: Sending packet PONG data None
+2019-08-20 12:53:53,401 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet OPEN data {'sid': '8f251f5c948a421f8a4200bc98d94f77', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:53:53,401 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet MESSAGE data 0
+2019-08-20 12:53:53,408 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received request to upgrade to websocket
+2019-08-20 12:53:53,409 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:53:53,409 [INFO ]  received event "session_request" from 8f251f5c948a421f8a4200bc98d94f77 [/]
+2019-08-20 12:53:53,409 [INFO ]  emitting event "session_confirm" to 8f251f5c948a421f8a4200bc98d94f77 [/]
+2019-08-20 12:53:53,410 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:53:53,413 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Upgrade to websocket successful
+2019-08-20 12:53:54,443 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet OPEN data {'sid': '519d5032bf8b492894bf3a1afd6c647b', 'upgrades': ['websocket'], 'pingTimeout': 60000, 'pingInterval': 25000}
+2019-08-20 12:53:54,443 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet MESSAGE data 0
+2019-08-20 12:53:54,449 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet MESSAGE data 2["session_request",{"session_id":"b71bcb2ade3f41ecbe22cc8113aed767"}]
+2019-08-20 12:53:54,450 [INFO ]  received event "session_request" from 519d5032bf8b492894bf3a1afd6c647b [/]
+2019-08-20 12:53:54,450 [INFO ]  emitting event "session_confirm" to 519d5032bf8b492894bf3a1afd6c647b [/]
+2019-08-20 12:53:54,451 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received request to upgrade to websocket
+2019-08-20 12:53:54,452 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet MESSAGE data 2["session_confirm","b71bcb2ade3f41ecbe22cc8113aed767"]
+2019-08-20 12:53:54,454 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Upgrade to websocket successful
+2019-08-20 12:54:19,447 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:54:19,447 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:54:19,506 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:54:19,506 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:54:45,152 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:54:45,152 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:54:45,153 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:54:45,153 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:55:10,444 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:55:10,445 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:55:10,445 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:55:10,445 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:55:35,468 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:55:35,474 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:55:36,439 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:55:36,439 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:56:00,625 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:56:00,626 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:56:02,133 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:56:02,136 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:56:26,457 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:56:26,463 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:56:27,442 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:56:27,443 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:56:51,477 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:56:51,478 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:56:53,441 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:56:53,441 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:57:17,134 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:57:17,135 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:57:18,444 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:57:18,444 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:57:42,442 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:57:42,442 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:57:44,179 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:57:44,180 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:58:08,134 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:58:08,134 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:58:09,358 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:58:09,358 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:58:33,606 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:58:33,612 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:58:34,418 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:58:34,418 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:58:59,439 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:58:59,439 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:58:59,506 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:58:59,506 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:59:24,444 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:59:24,444 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:59:25,504 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:59:25,505 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 12:59:50,437 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 12:59:50,443 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 12:59:50,508 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 12:59:50,508 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 13:00:15,446 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 13:00:15,446 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 13:00:16,452 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 13:00:16,453 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 13:00:41,408 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Received packet PING data None
+2019-08-20 13:00:41,408 [INFO ]  519d5032bf8b492894bf3a1afd6c647b: Sending packet PONG data None
+2019-08-20 13:00:42,506 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Received packet PING data None
+2019-08-20 13:00:42,508 [INFO ]  8f251f5c948a421f8a4200bc98d94f77: Sending packet PONG data None
+2019-08-20 13:00:50,601 [ERROR]  Task was destroyed but it is pending!
+task: <Task pending coro=<AsyncServer._service_task() running at /Users/sanjay/anaconda3/envs/rasa_envs/lib/python3.6/site-packages/engineio/asyncio_server.py:433> wait_for=<Future pending cb=[<TaskWakeupMethWrapper object at 0x13537a918>()]>>
+2019-08-20 13:00:50,602 [INFO ]  event loop is closed, exiting service task

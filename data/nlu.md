@@ -7,7 +7,6 @@
 - CINAHL database
 - cinahl database
 - How can I access CINAHL database?
-- How can I access CINAHL database?
 
 ## intent:affirm
 - yes
@@ -44,6 +43,9 @@
 - No
 - nope
 - Nope
+- no
+- no
+- no
 
 ## intent:difference_between_qualitative_quantative_articles
 - what is the difference between qualitative and quantitative articles
@@ -55,6 +57,14 @@
 - difference between quantitative and qualitative articles
 - differences between qualitative and quantitative research articles
 - what is the difference between quantitative and qualitative articles?
+
+## intent:find_RN_to_BSN_program_homepage
+- How can I find the RN to BSN Program Homepage?
+- webpage of RN to BSN
+- RN-BSN
+- The RN-BSN program
+- Online RN-BSN
+- Information about the RN-BSN Program
 
 ## intent:goodbye
 - bye
@@ -74,12 +84,14 @@
 - Hello
 - Hi
 - HI
+- Hi
+- Hi
 
 ## intent:how_to_know_type_of_articles
 - how can I recognize that an Article is in Qualitative or Quantitative or Mixed Method?
 - is the article qualitative or quantitative?
 - How can I know if the article is quantitative or qualitative
-- Help me to find the category of resarch articles
+- Help me to find the category of research articles
 - is this article quantitative or qualitative ?
 - how to know the type of articles?
 - how to know types of articles
@@ -101,6 +113,14 @@
 - i am looking for nursing librarian email
 - Email of nursing librarian
 
+## intent:plagiarism_tutorial_in
+- Where can I find the plagiarism tutorial?
+- find plagiarism tutorial
+- plagiarism tutorial
+- tutorial on plagiarism
+- tutorial on plagrism
+- articles on plagiarism
+
 ## intent:quantitative_research_article
 - i need help finding a quantitative article for my research course.
 - i am having a hard time searching for articles that are quantitative .
@@ -120,10 +140,13 @@
 - How do I find a research articles?
 - How do I find a research articles
 - How do I find a research article?
-- How do I find a research articles?
+- /quantitative_research_article
+- /quantitative_research_article
+- /quantitative_research_article
+- /quantitative_research_article
+- How can I find research\n      articles?
 
 ## intent:stop
-- /stop
 - /stop
 
 ## intent:thanks

@@ -13,6 +13,7 @@
   - utter_gratitude
 * goodbye
   - utter_goodbye
+  - utter_start_chat_again_button
   - action_restart
 
 ## news path 3
@@ -24,9 +25,10 @@
 * affirm
   - utter_gratitude
   - utter_goodbye
+  - utter_start_chat_again_button
   - action_restart
 
-## news path 4
+## difference_between_qualitative_quantative_articles path 4
 * greet
   - utter_greet
 * difference_between_qualitative_quantative_articles
@@ -42,6 +44,7 @@
 * goodbye
   - utter_goodbye
   - utter_gratitude
+  - utter_start_chat_again_button
   - action_restart
 
 ## goodbye path 5
@@ -62,6 +65,7 @@
   - utter_anymore_questions
 * deny
   - utter_goodbye
+  - utter_start_chat_again_button
   - action_restart
 
 ## find_a_research_article path 8
@@ -80,4 +84,37 @@
     - utter_more_help_librarian_email
 * goodbye
     - utter_goodbye
+    - utter_start_chat_again_button
     - action_restart
+
+## provide_RN_to_BSN_homepage_link path 9
+> check_greeting
+* find_RN_to_BSN_program_homepage
+  - utter_provide_RN_to_BSN_homepage_link
+  - utter_did_that_help
+* affirm
+  - utter_gratitude
+* goodbye
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+## deny_research_article_path 10
+* greet
+    - utter_greet
+* quantitative_research_article
+    - utter_happy_to_help
+    - utter_ask_article_for_research_or_project
+* deny
+    - utter_start_chat_again_button
+    - action_restart
+
+## provide_plagiarism_guide_link_path
+> check_greeting
+* plagiarism_tutorial_in
+  - utter_plagiarism_tutorial_link
+  - utter_did_that_help
+* affirm
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart

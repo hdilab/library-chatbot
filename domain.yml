@@ -23,23 +23,28 @@ actions:
 - utter_my_intro
 - utter_nursing_database
 - utter_nursing_librarians_email
+- utter_plagiarism_tutorial_link
+- utter_provide_RN_to_BSN_homepage_link
+- utter_start_chat_again_button
 entities:
 - area_of_study
 - articles_domain
 intents:
-- affirm
 - quantitative_research_article
-- thanks
+- deny
 - greet
+- affirm
+- thanks
 - choose
 - stop
 - access_CINAHL_database
-- deny
 - difference_between_qualitative_quantative_articles
+- find_RN_to_BSN_program_homepage
 - goodbye
 - how_to_know_type_of_articles
 - libraries_hours
 - nursing_librarians_email
+- plagiarism_tutorial_in
 slots:
   area_of_study:
     initial_value: Kinesiology
@@ -64,17 +69,23 @@ templates:
   - text: Are you looking for journal articles for a research paper or project?
   utter_ask_field_of_study:
   - buttons:
-    - payload: '/choose{"area_of_study": "kinesiology"}'
-      title: Kinesiology
-    - payload: '/choose{"area_of_study": "data"}'
-      title: Data
     - payload: '/choose{"area_of_study": "nursing"}'
       title: Nursing
+    - payload: '/choose{"area_of_study": "social_work"}'
+      title: Social Work
+    - payload: '/choose{"area_of_study": "business"}'
+      title: Business
+    - payload: '/choose{"area_of_study": "history"}'
+      title: History
+    - payload: '/choose{"area_of_study": "english"}'
+      title: English
+    - payload: '/choose{"area_of_study": "chemistry"}'
+      title: Chemistry
     - payload: '/choose{"area_of_study": "others"}'
       title: Others
     text: What are you studying?
   utter_default:
-  - text: "Sorry, I did not understand you. Please rephrase your question."
+  - text: Sorry, I did not understand you. Please rephrase your question.
   utter_did_that_help:
   - text: Did that help you?
   utter_did_you_open_link:
@@ -89,14 +100,19 @@ templates:
   utter_gratitude:
   - text: Glad that I could be of help to you!
   utter_greet:
-  - text: "Hey! What can I do for you? \nSelect an option below or type your question below."
-    buttons:
-    - title: "How can I access CINAHL database?"
-      payload: '/access_CINAHL_database'
-    - title: "What is the difference between quantitative and qualitative articles?"
-      payload: '/difference_between_qualitative_quantative_articles'
-    - title: "How can I find research articles?"
-      payload: '/quantitative_research_article'
+  - buttons:
+    - payload: /access_CINAHL_database
+      title: How can I access CINAHL database?
+    - payload: /difference_between_qualitative_quantative_articles
+      title: What is the difference between quantitative and qualitative articles?
+    - payload: /quantitative_research_article
+      title: How can I find research articles?
+    - payload: /find_RN_to_BSN_program_homepage
+      title: How can I find RN to BSN program homepage?
+    - payload: /plagiarism_tutorial_in
+      title: Where can I find the plagiarism tutorial?
+    text: "Hey! What can I do for you? \nSelect an option below or type your question\
+      \ below."
   utter_happy_to_help:
   - text: Hi ! I would be happy to help you.
   utter_input_in_CINAHL:
@@ -104,7 +120,7 @@ templates:
       \ for. Combine like-terms with OR.\n An example search is youth OR adolescent\
       \ OR teen OR teenager."
   utter_more_help_librarian_email:
-  - text: If you need more help, you can email at peace@uta.edu.
+  - text: If you need more help, you can email at askus@uta.edu.
   utter_my_intro:
   - text: Hi there, I am a nursing bot. How can I help you?
   utter_nursing_database:
@@ -115,3 +131,14 @@ templates:
   utter_nursing_librarians_email:
   - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
   - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
+  utter_provide_RN_to_BSN_homepage_link:
+  - text: Please open the link of RN to BSN degree [webpage](http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php)
+      in the new tab.
+  utter_plagiarism_tutorial_link:
+  - text: "Please proceed to [Acknowledging Sources](http://library.uta.edu/plagiarism/index.html) in the new tab.
+          \n To send your quiz results at the end, be sure to use your mavs.uta.edu email address."
+  utter_start_chat_again_button:
+  - buttons:
+    - payload: /greet
+      title: Start Over
+    text: "Click the button below to start the conversation again."
