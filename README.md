@@ -19,7 +19,7 @@ Once you are able to see the version number with the command **$rasa --version**
 The training data for the chatbot will be provided inside **data > nlu.md**, and sample paths of conversations will be saved inside **data > stories.md**. Additionally the trained models will be stored in the **models** directory.
 
 **How to Use this repository to run in your local machine**
-Once you clone this repository, please follow this procedure:
+> Once you clone this repository, please follow this procedure:
 > - Open widget_test.html in Safari, Google Chrome, or Firefox
 > - Open two terminal windows and activate your rasa environment in both terminal windows
 > - In one terminal, run the command **rasa run -m models --enable-api --log-file log.out --endpoints endpoints.yml --credentials credentials.yml**
