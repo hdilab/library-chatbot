@@ -134,29 +134,29 @@
 > - **library_bot**: They will not always use the words qualitative or quantitative or mixed methods. You will need to see how they describe the design in the methodology.
 >> Did that help you?
 > - **user**: yes
->> -**library_bot**:Glad that I could be of help to you
-> -**user**: bye
->> -**library_bot**:Bye
->> Glad that I could be of help to you
+> - **library_bot**:Glad that I could be of help to you
+> - **user**: bye
+> - **library_bot**:Bye
+>-  Glad that I could be of help to you
 
 **Sample Conversation for Path 14**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: cite the mission statement using apa format
->> -**library_bot**: Part A - Please open the link in new tab https://libguides.uta.edu/NursingInfo, clik on the tab Databases, and select CINAHL. If you are off-campus, you will be prompted for your UTA username and password. - Input your topic information in the search bar and check Peer-Reviewed. - Once you find an article, click the link that says "Full Text" to read it. Cite it according to APA rules found in the APA manual https://libguides.uta.edu/apa/citations
->> Part B 1. Figure out an interest in nursing, then find a professional organization that encompasses that interest. 2. Find the mission statement. This is usually on an "About Us" page or something similar. - Then cite it as a webpage according to section 6.05 of the APA manual (page 171-172). For more info on citing using APA, see the APA style blog (http://www.apastyle.org/learn/quick-guide-on-references.aspx#Websites)"
->> Did that help you
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: cite the mission statement using apa format
+> - **library_bot**: Part A - Please open the link in new tab https://libguides.uta.edu/NursingInfo, clik on the tab Databases, and select CINAHL. If you are off-campus, you will be prompted for your UTA username and password. - Input your topic information in the search bar and check Peer-Reviewed. - Once you find an article, click the link that says "Full Text" to read it. Cite it according to APA rules found in the APA manual https://libguides.uta.edu/apa/citations
+> - Part B 1. Figure out an interest in nursing, then find a professional organization that encompasses that interest. 2. Find the mission statement. This is usually on an "About Us" page or something similar. - Then cite it as a webpage according to section 6.05 of the APA manual (page 171-172). For more info on citing using APA, see the APA style blog (http://www.apastyle.org/learn/quick-guide-on-references.aspx#Websites)"
+> - Did that help you
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 15**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: How can I tell that the article is peer reviewed
->> -**library_bot**: f you’ve used a library database the full description may include the phrase "Peer Reviewed. Click on the title of the record to display the full description. 2. When first searching in a library database, there is often a limit option where you can simply click a little box to limit to only those items which are peer reviewed journals. 3. If you have obtained the article from a resource other than a library database you can consult the options outlined in Academic (Peer Reviewed) Journals
->> Did that help you
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: How can I tell that the article is peer reviewed
+> - **library_bot**: f you’ve used a library database the full description may include the phrase "Peer Reviewed. Click on the title of the record to display the full description. 2. When first searching in a library database, there is often a limit option where you can simply click a little box to limit to only those items which are peer reviewed journals. 3. If you have obtained the article from a resource other than a library database you can consult the options outlined in Academic (Peer Reviewed) Journals
+> - Did that help you
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 16**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: Bye
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: Bye
+> - **library_bot**: Bye
