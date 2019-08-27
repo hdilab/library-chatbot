@@ -20,7 +20,7 @@
 > - **user**: Bye
 > - **library_bot** Bye
 
-> **Sample Conversation for Path 2**
+**Sample Conversation for Path 2**
 > - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
 > - **user**: How do I find a research journal?
 > - **library_bot**:Hi ! I would be happy to help you. Are you looking for journal articles for a research paper or project?
