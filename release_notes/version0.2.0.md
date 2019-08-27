@@ -7,9 +7,9 @@
 ![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_i_graph.png)
 
 **Sample Conversation for Path 1**
--**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
--**user**: How do I find a research journal?
--**library_bot**:Hi ! I would be happy to help you. Are you looking for journal articles for a research paper or project?
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: How do I find a research journal?
+> - **library_bot**:Hi ! I would be happy to help you. Are you looking for journal articles for a research paper or project?
 -**user**: Yes
 -**library_bot**: What are you studying? Buttons: Nursing, Social Work, Business, History, English, Chemistry, Others
 -**user**: Nursing
