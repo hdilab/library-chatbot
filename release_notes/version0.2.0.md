@@ -127,7 +127,7 @@
 > - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
 > - **user**: difference between quantitative and qualitative articles
 > - **library_bot**: Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553 There is a lot of good content in the guide
->> Did that help you?
+>> - Did that help you?
 > - **user**: no
 > - **library_bot**: Okay! Let's start again, please rephrase your question?
 > - **user**: How can I know if the article is quantitative or qualitative
