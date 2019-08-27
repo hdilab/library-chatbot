@@ -1,7 +1,7 @@
 # Release note for version:0.2.0
 
 **This version can handle 16 different questions from users.** The following image is obtained by using the command **$rasa visualize**
-![image]()
+![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/v_0_2_0_rasa_visualize.png)
 
 **The above image is divided into two images and the fist half of the image includes the conversations paths from 1 to 9. The sample conversations are listed below according to the corresponding numbers from 1 to 9**
 ![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_i_graph.png)
