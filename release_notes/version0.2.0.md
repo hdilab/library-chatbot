@@ -21,76 +21,76 @@
 > - **library_bot** Bye
 
 > **Sample Conversation for Path 2**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: How do I find a research journal?
->> -**library_bot**:Hi ! I would be happy to help you. Are you looking for journal articles for a research paper or project?
->> -**user**: No
->> -**library_bot**: Click the button below to start the conversation again.
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: How do I find a research journal?
+> - **library_bot**:Hi ! I would be happy to help you. Are you looking for journal articles for a research paper or project?
+> - **user**: No
+> - **library_bot**: Click the button below to start the conversation again.
 
 > **Sample Conversation for Path 3**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: Help me to get CINAHL database
->> -**library_bot**:You can open the given link in the new tab to access CINAHL: https://libguides.uta.edu/cinahl . If you are off-campus, you will be prompted to log in using your NetID username and password.
->> Input a search with terms that may be found in the resources you are looking for. Combine like-terms with OR. An example search is youth OR adolescent OR teen OR teenager.
->> -**user**: Thanks
->> -**library_bot**: Do you have anymore questions
->> -**user**: Nope
->> - **library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: Help me to get CINAHL database
+> - **library_bot**:You can open the given link in the new tab to access CINAHL: https://libguides.uta.edu/cinahl . If you are off-campus, you will be prompted to log in using your NetID username and password.
+> - Input a search with terms that may be found in the resources you are looking for. Combine like-terms with OR. An example search is youth OR adolescent OR teen OR teenager.
+> - **user**: Thanks
+> - **library_bot**: Do you have anymore questions
+> - **user**: Nope
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 4**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: Want to know about APA format
->> -**library_bot**:Please open the link in the new tab https://gseacademic.harvard.edu/~instruct/articulate/apa_mod/APA_Intro/player.html which will take you to Mages, W. K. (n.d.). APA exposed: Everything you always wanted to know about APA format but were afraid to ask Online presentation(APA tutorial). View the tutorial and complete as directed the attestation within your assignment. Please enable Adobe Flash Player.
->> Did that help you.
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: Want to know about APA format
+> - **library_bot**:Please open the link in the new tab https://gseacademic.harvard.edu/~instruct/articulate/apa_mod/APA_Intro/player.html which will take you to Mages, W. K. (n.d.). APA exposed: Everything you always wanted to know about APA format but were afraid to ask Online presentation(APA tutorial). View the tutorial and complete as directed the attestation within your assignment. Please enable Adobe Flash Player.
+> - Did that help you.
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 5**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: RN - BSN
->> -**library_bot**:Please open the link of RN to BSN degree webpage http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php in the new tab.
->> Did that help you?
->> -**user**: Yes
->> -**library_bot**: Glad that I could be of help to you!
->> -**user**: Bye
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: RN - BSN
+> - **library_bot**:Please open the link of RN to BSN degree webpage http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php in the new tab.
+> - Did that help you?
+> - **user**: Yes
+> - **library_bot**: Glad that I could be of help to you!
+> - **user**: Bye
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 6**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: authors professional background
->> -**library_bot**:The author's credentials, degrees and certifications, are usually listed on the article somewhere; often (a) after or below the author's name, (b) at the bottom of the first page, OR (c) just before the list of references.
->> We also have two databases that might serve useful for this type of case: Contemporary Authors and Contemporary Literary Criticism Select, both of which can be found at https://libguides.uta.edu/az.php?a=c
->> Sometimes, if these are not within the article, you might have to do an internet search and may find the information on the webpages at the author's place of employment (author affiliation). Reporting the author's place of employment may also be a relevant bit of information.
->> Rarely you might not be able to find out anything about the author, even after looking through the article and searching the internet.The lack of information would be important in this case.
->> Did that help you?
->> -**user**: Yes
->> -**library_bot**: Glad that I could be of help to you!
->> -**user**: Bye
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: authors professional background
+> - **library_bot**:The author's credentials, degrees and certifications, are usually listed on the article somewhere; often (a) after or below the author's name, (b) at the bottom of the first page, OR (c) just before the list of references.
+>> - We also have two databases that might serve useful for this type of case: Contemporary Authors and Contemporary Literary Criticism Select, both of which can be found at https://libguides.uta.edu/az.php?a=c
+> - Sometimes, if these are not within the article, you might have to do an internet search and may find the information on the webpages at the author's place of employment (author affiliation). Reporting the author's place of employment may also be a relevant bit of information.
+> - Rarely you might not be able to find out anything about the author, even after looking through the article and searching the internet.The lack of information would be important in this case.
+> - Did that help you?
+> - **user**: Yes
+> - **library_bot**: Glad that I could be of help to you!
+> - **user**: Bye
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 7**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: resource guide for nursing
->> -**library_bot**: Please open this guide in new tab https://libguides.uta.edu/SearchingCINAHL. If you have more questions, please contact the nursing librarians at nursinglibrarians@uta.edu
->> Did that help you?
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: resource guide for nursing
+> - **library_bot**: Please open this guide in new tab https://libguides.uta.edu/SearchingCINAHL. If you have more questions, please contact the nursing librarians at nursinglibrarians@uta.edu
+> - Did that help you?
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 8**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: articles on plagiarism
->> -**library_bot**: Please proceed to Acknowledging Sources http://library.uta.edu/plagiarism/index.html
->> Did that help you?
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: articles on plagiarism
+> - **library_bot**: Please proceed to Acknowledging Sources http://library.uta.edu/plagiarism/index.html
+> - Did that help you?
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **Sample Conversation for Path 9**
->> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
->> -**user**: title page required by UTA Nursing department
->> -**library_bot**: Please refer this page for the reference https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf
->> Did that help you?
->> -**user**: Yes
->> -**library_bot**: Bye
+> - **library_bot**: Hey! What can I do for you? Select an option below or type your question below.
+> - **user**: title page required by UTA Nursing department
+> - **library_bot**: Please refer this page for the reference https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf
+> - Did that help you?
+> - **user**: Yes
+> - **library_bot**: Bye
 
 **The second half of the image includes conversational paths from numbers 10 to 16. The sample conversations are provided below with each conversation path number**
 ![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_ii_graph.png)
