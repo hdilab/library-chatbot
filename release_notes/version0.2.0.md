@@ -4,7 +4,7 @@
 ![image]()
 
 > **The above image is divided into two images and the fist half of the image includes the conversations paths from 1 to 9. The sample conversations are listed below according to the corresponding numbers from 1 to 9**
-![image]()
+![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_i_graph.png)
 
 > **Sample Conversation for Path 1**
 >> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
