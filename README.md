@@ -17,3 +17,12 @@ Once you are able to see the version number with the command **$rasa --version**
 > - The command will create the following files: __init__.py, actions.py, config.yml, credentials.yml, domain.yml, and endpoints.yml, and the following folders: data and models.
 
 The training data for the chatbot will be provided inside **data > nlu.md**, and sample paths of conversations will be saved inside **data > stories.md**. Additionally the trained models will be stored in the **models** directory.
+
+**How to Use this repository to run in your local machine**
+Once you clone this repository, please follow this procedure:
+> - Open widget_test.html in Safari, Google Chrome, or Firefox
+> - Open two terminal windows and activate your rasa environment in both terminal windows
+> - In one terminal, run the command **rasa run -m models --enable-api --log-file log.out --endpoints endpoints.yml --credentials credentials.yml**
+> - In the next terminal, run the command **rasa run actions**
+> - Go to your browser with the tab widget_test.html, and click on the blue chat icon on the bottom-left corner.
+> Follow the prompt or type your questions.
