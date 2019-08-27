@@ -9,6 +9,9 @@ actions:
 - utter_ask_again
 - utter_ask_article_for_research_or_project
 - utter_ask_field_of_study
+- utter_article_is_peer_reviewed
+- utter_cite_an_article_using_apa_partA
+- utter_cite_an_article_using_apa_partB
 - utter_default
 - utter_did_that_help
 - utter_did_you_open_link
@@ -17,34 +20,50 @@ actions:
 - utter_goodbye
 - utter_gratitude
 - utter_greet
+- utter_find_authors_education_background_i
+- utter_find_authors_education_background_ii
+- utter_find_authors_education_background_iii
+- utter_find_authors_education_background_iv
 - utter_happy_to_help
 - utter_input_in_CINAHL
+- utter_link_for_apa_exposed
 - utter_more_help_librarian_email
 - utter_my_intro
 - utter_nursing_database
 - utter_nursing_librarians_email
+- utter_open_pubmed_website
 - utter_plagiarism_tutorial_link
 - utter_provide_RN_to_BSN_homepage_link
+- utter_resource_guide_for_nursing
 - utter_start_chat_again_button
+- utter_title_page_for_nursing_department
 entities:
 - area_of_study
 - articles_domain
 intents:
-- quantitative_research_article
-- deny
-- greet
 - affirm
-- thanks
 - choose
-- stop
 - access_CINAHL_database
+- article_is_peer_reviewed
+- articles_from_pubmed
+- cite_an_article_using_apa
+- deny
 - difference_between_qualitative_quantative_articles
 - find_RN_to_BSN_program_homepage
+- find_authors_education_background
 - goodbye
+- greet
 - how_to_know_type_of_articles
 - libraries_hours
+- link_for_apa_exposed
 - nursing_librarians_email
 - plagiarism_tutorial_in
+- quantitative_research_article
+- resource_guide_for_nursing
+- stop
+- title_page_for_uta_nursing_department
+- thanks
+
 slots:
   area_of_study:
     initial_value: Kinesiology
@@ -59,6 +78,13 @@ templates:
       \ username and password."
   utter_anymore_questions:
   - text: Do you have any more questions?
+  utter_article_is_peer_reviewed:
+  - text: 1. If you’ve used a library database the full description may include the phrase "Peer Reviewed.
+             Click on the title of the record to display the full description.
+          2. When first searching in a library database, there is often a limit option where you can simply
+             click a little box to limit to only those items which are peer reviewed journals.
+          3. If you have obtained the article from a resource other than a library database
+             you can consult the options outlined in Academic (Peer Reviewed) Journals
   utter_article_type_from_articles:
   - text: "They will not always use the words qualitative or quantitative or mixed\
       \  methods.\n You will need to see how they describe the design in the methodology."
@@ -84,6 +110,17 @@ templates:
     - payload: '/choose{"area_of_study": "others"}'
       title: Others
     text: What are you studying?
+  utter_cite_an_article_using_apa_partA:
+  - text: Part A
+          - Please open the link in new tab <https://libguides.uta.edu/NursingInfo>, clik on the tab **Databases**, and select CINAHL.
+              If you are off-campus, you will be prompted for your UTA username and password.
+          - Input your topic information in the search bar and check **Peer-Reviewed**.
+          - Once you find an article, click the link that says "Full Text" to read it. Cite it according to APA rules found in the APA manual <https://libguides.uta.edu/apa/citations>
+  utter_cite_an_article_using_apa_partB:
+  - text:   Part B
+            1. Figure out an interest in nursing, then find a professional organization that encompasses that interest.
+            2. Find the mission statement. This is usually on an "About Us" page or something similar.
+            - Then cite it as a webpage according to section 6.05 of the APA manual (page 171-172). For more info on citing using APA, see the APA style blog (http://www.apastyle.org/learn/quick-guide-on-references.aspx#Websites)"
   utter_default:
   - text: Sorry, I did not understand you. Please rephrase your question.
   utter_did_that_help:
@@ -93,6 +130,18 @@ templates:
   utter_difference_between_qualitative_quantative_articles:
   - text: "Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553\
       \ \n There is a lot of good content in the guide"
+  utter_find_authors_education_background_i:
+  - text: "The author's credentials, degrees and certifications, are usually listed on the article somewhere; often (a) after or below the \
+          author's name, (b) at the bottom of the first page, OR (c) just before the list of references."
+  utter_find_authors_education_background_ii:
+  - text: "We also have two databases that might serve useful for this type of case: Contemporary Authors and Contemporary Literary Criticism Select, \
+           both of which can be found at https://libguides.uta.edu/az.php?a=c"
+  utter_find_authors_education_background_iii:
+  - text: "Sometimes, if these are not within the article, you might have to do an internet search and may find the information on the webpages at\
+          the author's place of employment (author affiliation). Reporting the author's place of employment may also be a relevant bit of information."
+  utter_find_authors_education_background_iv:
+  - text: "Rarely you might not be able to find out anything about the author, even after looking through the article and searching the internet.\
+          The lack of information would be important in this case."
   utter_general_database:
   - text: 'Please open this link in new tab: https://libguides.uta.edu/quantitative_and_qualitative_research'
   utter_goodbye:
@@ -119,8 +168,15 @@ templates:
   - text: "Input a search with terms that may be found in the resources you are looking\
       \ for. Combine like-terms with OR.\n An example search is youth OR adolescent\
       \ OR teen OR teenager."
+  utter_link_for_apa_exposed:
+    - text: "Please open the link in the new tab <https://gseacademic.harvard.edu/~instruct/articulate/apa_mod/APA_Intro/player.html> \
+            \ which will take you to Mages, W. K. (n.d.). APA exposed: Everything you always wanted to know about APA format but were \
+            afraid to ask Online presentation(APA tutorial). \n
+            View the tutorial and complete as directed the attestation within your assignment.\n
+            Please **enable Adobe Flash Player**"
+
   utter_more_help_librarian_email:
-  - text: If you need more help, you can email at askus@uta.edu.
+  - text: If you need more help, you can email at <askus@uta.edu>
   utter_my_intro:
   - text: Hi there, I am a nursing bot. How can I help you?
   utter_nursing_database:
@@ -131,14 +187,24 @@ templates:
   utter_nursing_librarians_email:
   - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
   - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
+  utter_open_pubmed_website:
+  - text: "Please click on the link of PubMed database in the new tab: https://www.ncbi.nlm.nih.gov/pubmed?otool=txutallib. \
+          Once you open the link, enter the keywords or articles you are looking for, and hit Search. \
+          It will list article, and select the article you want to study. After selection, you will see \
+          a link in the top right that says Full text links with the logo of the University of Texas at Arlington. \
+          Click on the link, and you will be directed to the article."
+
   utter_provide_RN_to_BSN_homepage_link:
-  - text: Please open the link of RN to BSN degree [webpage](http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php)
-      in the new tab.
+  - text: Please open the link of RN to BSN degree webpage <http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php> in the new tab.
   utter_plagiarism_tutorial_link:
-  - text: "Please proceed to [Acknowledging Sources](http://library.uta.edu/plagiarism/index.html) in the new tab.
-          \n To send your quiz results at the end, be sure to use your mavs.uta.edu email address."
+  - text: Please proceed to Acknowledging Sources [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
   utter_start_chat_again_button:
   - buttons:
     - payload: /greet
       title: Start Over
     text: "Click the button below to start the conversation again."
+  utter_resource_guide_for_nursing:
+  - text: Please open this guide in new tab <https://libguides.uta.edu/SearchingCINAHL>. If you have more questions,
+          please contact the nursing librarians at <nursinglibrarians@uta.edu>
+  utter_title_page_for_nursing_department:
+    - text: Please refer this page for the reference <https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf>

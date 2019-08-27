@@ -16,6 +16,17 @@
   - utter_start_chat_again_button
   - action_restart
 
+## provide_articles_from_pubmed
+> check_greeting
+* articles_from_pubmed
+ - utter_open_pubmed_website
+ - utter_did_that_help
+* affirm
+ - utter_gratitude
+ - utter_goodbye
+ - utter_start_chat_again_button
+ - action_restart
+
 ## news path 3
 * greet
   - utter_greet
@@ -24,6 +35,17 @@
   - utter_did_that_help
 * affirm
   - utter_gratitude
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+## cite_an_article_using_apa_path
+> check_greeting
+* cite_an_article_using_apa
+  - utter_cite_an_article_using_apa_partA
+  - utter_cite_an_article_using_apa_partB
+  - utter_did_that_help
+* affirm
   - utter_goodbye
   - utter_start_chat_again_button
   - action_restart
@@ -56,6 +78,17 @@
 * goodbye
   - utter_goodbye
 
+## if_an_article_is_peer_reviewed_path
+> check_greeting
+* article_is_peer_reviewed
+  - utter_article_is_peer_reviewed
+  - utter_did_that_help
+* affirm
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+
 ## provide_CINAHL_link path 7
 > check_greeting
 * access_CINAHL_database
@@ -87,6 +120,21 @@
     - utter_start_chat_again_button
     - action_restart
 
+## find_authors_education_background_path
+> check_greeting
+* find_authors_education_background
+  - utter_find_authors_education_background_i
+  - utter_find_authors_education_background_ii
+  - utter_find_authors_education_background_iii
+  - utter_find_authors_education_background_iv
+  - utter_did_that_help
+* affirm
+  - utter_gratitude
+* goodbye
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
 ## provide_RN_to_BSN_homepage_link path 9
 > check_greeting
 * find_RN_to_BSN_program_homepage
@@ -113,6 +161,36 @@
 > check_greeting
 * plagiarism_tutorial_in
   - utter_plagiarism_tutorial_link
+  - utter_did_that_help
+* affirm
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+## provide_link_for_the_apa_exposed
+> check_greeting
+* link_for_apa_exposed
+  - utter_link_for_apa_exposed
+  - utter_did_that_help
+* affirm
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+## resource_guide_for_nursing_path
+> check_greeting
+* resource_guide_for_nursing
+  - utter_resource_guide_for_nursing
+  - utter_did_that_help
+* affirm
+  - utter_goodbye
+  - utter_start_chat_again_button
+  - action_restart
+
+## title_page_for_uta_nursing_department
+> check_greeting
+* title_page_for_uta_nursing_department
+  - utter_title_page_for_nursing_department
   - utter_did_that_help
 * affirm
   - utter_goodbye
