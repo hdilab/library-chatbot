@@ -93,7 +93,7 @@
 >> -**library_bot**: Bye
 
 **The second half of the image includes conversational paths from numbers 10 to 16. The sample conversations are provided below with each conversation path number**
-![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_ii_graph
+![image](https://github.com/hdilab/library-chatbot/blob/frequently_asked_questions_nursing/release_version_0_2_0_ii_graph)
 
 **Sample Conversation for Path 10**
 >> -**library_bot**: Hey! What can I do for you? Select an option below or type your question below.
