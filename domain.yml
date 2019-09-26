@@ -49,9 +49,8 @@ templates:
   - text: .* Acceptable ID is valid government issued ID, such as a driver's license/ID
       card/passport.  Work ID's and other University ID's will not be accepted.
   utter_access_CINAHL_database:
-  - text: "You can open the given link in the new tab to access CINAHL:  https://libguides.uta.edu/cinahl\
-      \ . \nIf you are off-campus, you will be prompted to log in using your NetID\
-      \ username and password."
+  - text: "Click for CINAHL:  https://libguides.uta.edu/cinahl\
+      \ . \nOff-campus? Log in using your NetID username and password."
   utter_add_money_to_print_quota_i:
   - text: In fall 2011, UTA's Office of Information Technology established pay-as-you-go
       printing.
@@ -135,7 +134,7 @@ templates:
   - text: Did you open the link?
   utter_difference_between_qualitative_quantative_articles:
   - text: "Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553\
-      \ \n There is a lot of good content in the guide."
+      \ \n There is a lot of good content throughout the guide. Check it out and see."
   utter_file_type_to_print_poster:
   - text: We recommend using any of the following; JPG, PNG, or PDF.
   utter_find_authors_education_background_i:
@@ -173,7 +172,7 @@ templates:
       title: How can I find RN to BSN program homepage?
     - payload: /plagiarism_tutorial_in
       title: Where can I find the plagiarism tutorial?
-    text: "Hey! What can I do for you? \nSelect an option below or type your question\
+    text: "Hello, I am a UTA Library Chatbot. How can I help you? \nSelect an option here or type your question\
       \ below."
   utter_guest_computer_account:
   - text: More information on what is required to request an account is available
@@ -208,7 +207,7 @@ templates:
       \ tutorial). \n View the tutorial and complete as directed the attestation within\
       \ your assignment.\n Please **enable Adobe Flash Player**"
   utter_more_help_librarian_email:
-  - text: If you need more help, you can email at <askus@uta.edu>
+  - text: If you need more help, email <askus@uta.edu>
   utter_my_intro:
   - text: Hi there, I am a nursing bot. How can I help you?
   utter_nursing_database:
@@ -220,12 +219,8 @@ templates:
   - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
   - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
   utter_open_pubmed_website:
-  - text: 'Please click on the link of PubMed database in the new tab: https://www.ncbi.nlm.nih.gov/pubmed?otool=txutallib.
-      Once you open the link, enter the keywords or articles you are looking for,
-      and hit Search. It will list article, and select the article you want to study.
-      After selection, you will see a link in the top right that says Full text links
-      with the logo of the University of Texas at Arlington. Click on the link, and
-      you will be directed to the article.'
+  - text: 'Visit libguides.uta.edu/pubmed and type a simple search at the top.\
+      \ To access an article, click its title & then the UTA link at the top right.'
   utter_pay_for_the_poster_i:
   - text: There are 2 options to pay for a poster.
   utter_pay_for_the_poster_ii:
@@ -258,7 +253,7 @@ templates:
   - text: Please open the link of RN to BSN degree webpage <http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php>
       in the new tab.
   utter_resource_guide_for_nursing:
-  - text: Please open this guide in new tab <https://libguides.uta.edu/SearchingCINAHL>.
+  - text: Please open this guide in new tab <https://libguides.uta.edu/nursing>.
       If you have more questions, please contact the nursing librarians at <nursinglibrarians@uta.edu>
   utter_start_chat_again_button:
   - buttons:
@@ -290,7 +285,8 @@ templates:
   - text: It is an automatic print once it is released from the print release station,
       and most images print in less than 2 minutes.
   utter_title_page_for_nursing_department:
-  - text: Please refer this page for the reference <https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf>
+  - text: "Please visit this example on the CONHI website: <https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf>"
+
 actions:
 - action_database_link
 - restart

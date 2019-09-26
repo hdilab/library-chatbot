@@ -27,11 +27,9 @@ class ActionHelloWorld(Action):
         # print(area_of_study_student)
 
         if area_of_study_student in ("nursing"):
-            utter_database_link = "In that case, I recommend searching CINAHL database at https://libguides.uta.edu/cinahl \
-                                    If you are off-campus, you will be prompted to log in using your NetID username\
-                                    and password. Also, you can open this link: https://libguides.uta.edu/NursingInfo. Once you open the link, \
-                                    click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
-                                    are also listed here."
+            utter_database_link = "In that case, I recommend searching CINAHL database at https://libguides.uta.edu/cinahl. \
+                                    Off-campus? Log in using your NetID username\
+                                    and password."
         elif area_of_study_student == "social_work":
             utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/SocialWorkInfo. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
@@ -55,7 +53,7 @@ class ActionHelloWorld(Action):
         else:
             utter_database_link = "In that case, I recommend opening the link: https://libguides.uta.edu/sb.php. \
             Please select a subject from the dropdown, and you will be guided to the homepage of the subject. Click on the database tab, and \
-            you may select one of the database  with the Best Bets. Additional database are also listed here." 
+            you may select one of the database  with the Best Bets. Additional database are also listed here."
         dispatcher.utter_message(utter_database_link)
 
         return []

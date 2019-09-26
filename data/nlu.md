@@ -227,6 +227,7 @@
 - tutorial on plagiarism
 - tutorial on plagrism
 - articles on plagiarism
+- acknowledging sources
 - /plagiarism_tutorial_in
 
 ## intent:plotter_printer_location
@@ -263,9 +264,10 @@
 - How do I find a research articles
 - How do I find a research article?
 - /quantitative_research_article
-- /quantitative_research_article
-- /quantitative_research_article
-- /quantitative_research_article
+- How do I find an article?
+- I need an article
+- journal articles
+- need 2 articles
 - How can I find research articles?
 
 ## intent:reserve_study_room
