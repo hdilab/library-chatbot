@@ -1,343 +1,237 @@
-## greet path 1
+## greet path
 * greet
-  - utter_greet
+- utter_greet
 > check_greeting
 
-## add_money_to_print_quota_path_17
+## find research article 1
 > check_greeting
-*  add_money_to_print_quota
-  - utter_add_money_to_print_quota_i
-  - utter_add_money_to_print_quota_ii
-  - utter_add_money_to_print_quota_iii
-  - utter_add_money_to_print_quota_iv
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-* goodbye
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## colors_and_sizes_of_poster_path_24
-> check_greeting
-* colors_and_sizes_of_poster
-  - utter_colors_and_sizes_of_poster
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## file_type_to_print_poster_path_26
-> check_greeting
-* file_type_to_print_poster
-  - utter_file_type_to_print_poster
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## hours_of_dining_services_path_29
-> check_greeting
-* hours_of_dining_services
-  - utter_hours_of_dining_services
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## poster_pickup_location_path_27
-> check_greeting
-* poster_pickup_location
-  - utter_poster_pickup_location
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-## provide_nursing_librarian_email path 2
-* greet
-  - utter_greet
-* nursing_librarians_email
-  - utter_nursing_librarians_email
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-* goodbye
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## provide_articles_from_pubmed
-> check_greeting
-* articles_from_pubmed
- - utter_open_pubmed_website
- - utter_did_that_help
-* affirm
- - utter_gratitude
- - utter_goodbye
- - utter_start_chat_again_button
- - action_restart
-
-## news path 3
-* greet
-  - utter_greet
-* difference_between_qualitative_quantative_articles
-  - utter_difference_between_qualitative_quantative_articles
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## cite_an_article_using_apa_path
-> check_greeting
-* cite_an_article_using_apa
-  - utter_cite_an_article_using_apa_partA
-  - utter_cite_an_article_using_apa_partB
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## difference_between_qualitative_quantative_articles path 4
-* greet
-  - utter_greet
-* difference_between_qualitative_quantative_articles
-  - utter_difference_between_qualitative_quantative_articles
-  - utter_did_that_help
-* deny
-  - utter_ask_again
-* how_to_know_type_of_articles
-  - utter_article_type_from_articles
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-* goodbye
-  - utter_goodbye
-  - utter_gratitude
-  - utter_start_chat_again_button
-  - action_restart
-
-## goodbye path 5
-* goodbye
-  - utter_goodbye
-
-## goodbye path 6
-> check_greeting
-* goodbye
-  - utter_goodbye
-
-## guest_visitor_alumni_library_access_path_18
-> check_greeting
-* guest_visitor_alumni_library_access
-  - utter_guest_visitor_alumni_library_access
-  - utter_acceptable_id
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## guest_visitor_alumni_wireless_internet_path_19
-> check_greeting
-* guest_visitor_alumni_wireless_internet
-  - utter_guest_visitor_alumni_wireless_internet
-  - utter_guest_computer_account
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## if_an_article_is_peer_reviewed_path
-> check_greeting
-* article_is_peer_reviewed
-  - utter_article_is_peer_reviewed
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## pay_for_the_poster_path_22
-> check_greeting
-* pay_for_the_poster
-  - utter_pay_for_the_poster_i
-  - utter_pay_for_the_poster_ii
-  - utter_pay_for_the_poster_iii
-  - utter_pay_for_the_poster_iv
-  - utter_pay_for_the_poster_v
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## plotter_printer_location_path_20
-> check_greeting
-* plotter_printer_location
-  - utter_plotter_printer_location_i
-  - utter_plotter_printer_location_ii
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## cost_to_print_the_plotter_path_21
-> check_greeting
-* cost_to_print_the_plotter
-  - utter_cost_to_print_the_plotter
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-
-## provide_CINAHL_link path 7
-> check_greeting
-* access_CINAHL_database
-  - utter_access_CINAHL_database
-  - utter_input_in_CINAHL
-* thanks
-  - utter_anymore_questions
-* deny
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## find_a_research_article path 8
-* greet
-    - utter_greet
 * quantitative_research_article
-    - utter_happy_to_help
     - utter_ask_article_for_research_or_project
 * affirm
     - utter_ask_field_of_study
 * choose{"area_of_study": "Nursing"}
     - slot{"area_of_study": "Nursing"}
     - action_database_link
-    - utter_did_that_help
-* affirm
-    - utter_more_help_librarian_email
-* goodbye
-    - utter_goodbye
-    - utter_start_chat_again_button
-    - action_restart
+> check_find_research_article
 
-## find_authors_education_background_path
+
+## cite an article using APA path 4
 > check_greeting
-* find_authors_education_background
-  - utter_find_authors_education_background_i
-  - utter_find_authors_education_background_ii
-  - utter_find_authors_education_background_iii
-  - utter_find_authors_education_background_iv
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-* goodbye
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
+* cite_an_article_using_apa
+  - utter_cite_an_article_using_apa
+> check_cite_an_article_using_apa_path
 
-## provide_RN_to_BSN_homepage_link path 9
+## RN to BSN homepage link 5
 > check_greeting
 * find_RN_to_BSN_program_homepage
   - utter_provide_RN_to_BSN_homepage_link
-  - utter_did_that_help
-* affirm
-  - utter_gratitude
-* goodbye
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
+> RN_to_BSN_homepage_link
 
-## deny_research_article_path 10
-* greet
-    - utter_greet
-* quantitative_research_article
-    - utter_happy_to_help
-    - utter_ask_article_for_research_or_project
-* deny
-    - utter_start_chat_again_button
-    - action_restart
-
-## provide_plagiarism_guide_link_path
+## authors education background 6
 > check_greeting
-* plagiarism_tutorial_in
-  - utter_plagiarism_tutorial_link
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
+* find_authors_education_background
+  - utter_find_authors_education_background
+> check_author_education_background
 
-## provide_link_for_the_apa_exposed
-> check_greeting
-* link_for_apa_exposed
-  - utter_link_for_apa_exposed
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## resource_guide_for_nursing_path
+## resource guide for nursing 7
 > check_greeting
 * resource_guide_for_nursing
   - utter_resource_guide_for_nursing
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
+> check_resource_guide_for_nursing
 
-## reserve_study_room_path_28
+
+## plagiarism guide 8
 > check_greeting
-* reserve_study_room
-  - utter_study_room_reserve_i
-  - utter_study_room_reserve_ii
-  - utter_study_room_reserve_iii
-  - utter_study_room_reserve_iv
-  - utter_study_room_reserve_v
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
+* plagiarism_tutorial_in
+  - utter_plagiarism_tutorial_link
+> check_plagiarism_guide
 
-## submit_poster_order_online_path_23
-> check_greeting
-* submit_poster_order_online
-  - utter_can_i_submit_poster_order_online
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## time_to_print_poster_path_25
-> check_greeting
-* time_to_print_poster
-  - utter_time_to_print_poster
-  - utter_did_that_help
-* affirm
-  - utter_goodbye
-  - utter_start_chat_again_button
-  - action_restart
-
-## title_page_for_uta_nursing_department
+## uta nursing title page 9
 > check_greeting
 * title_page_for_uta_nursing_department
   - utter_title_page_for_nursing_department
-  - utter_did_that_help
+> check_uta_nursing_title_page
+
+## nursing librarian email 10
+> check_greeting
+* nursing_librarians_email
+  - utter_nursing_librarians_email
+> check_nursing_librarian_email
+
+## provide pubmed articles 11
+> check_greeting
+* articles_from_pubmed
+ - utter_open_pubmed_website
+> check_pubmed_articles
+
+## check difference between qq articles 12
+> check_greeting
+* difference_between_qualitative_quantative_articles
+  - utter_difference_between_qualitative_quantative_articles
+> check_difference_between_qq_articles
+
+## link for the apa exposed 14
+> check_greeting
+* link_for_apa_exposed
+  - utter_link_for_apa_exposed
+> check_link_for_the_apa_exposed
+
+## tell if article is peer reviewed 15
+> check_greeting
+* article_is_peer_reviewed
+  - utter_article_is_peer_reviewed
+> check_tell_if_article_is_peer_reviewed
+
+
+## add money 17
+> check_greeting
+* add_money_to_print_quota
+  - utter_add_money_to_print_quota
+> check_add_money
+
+## add money cash 17
+> check_add_money
+> check_poster_payment_load_money
+* cash
+  - utter_pay_by_cash_response
+> check_add_money_cash
+
+## add money credit 17
+> check_add_money
+> check_poster_payment_load_money
+* credit
+  - utter_pay_by_credit_response
+> check_add_money_credit
+
+## check library alumni visitor access 18
+> check_greeting``
+* guest_visitor_alumni_library_access
+  - utter_guest_visitor_alumni_library_access
+> check_library_alumni_visitor_access
+
+## check library alumni visitor wireless internet access 19
+> check_greeting
+* guest_visitor_alumni_wireless_internet
+  - utter_guest_visitor_alumni_wireless_internet
+> check_library_alumni_visitor_wireless_internet_access
+
+## plotter printer location 20
+> check_greeting
+* plotter_printer_location
+  - utter_plotter_printer_location
+> check_plotter_printer_location 
+
+## plotter cost 21
+> check_greeting
+* cost_to_print_the_plotter
+  - utter_cost_to_print_the_plotter
+> check_plotter_cost
+
+## poster payment 22 sub
+> check_greeting
+* pay_for_the_poster
+  - utter_pay_for_the_poster
+* add_money_to_print_quota
+  - utter_add_money_to_print_quota
+> check_poster_payment_load_money
+
+## poster payment 22 sub
+> check_greeting
+* pay_for_the_poster
+  - utter_pay_for_the_poster
+* get_temporary_card
+  - utter_get_temporary_card
+> check_poster_payment_temp_card
+
+## poster online order 23
+> check_greeting
+* submit_poster_order_online
+  - utter_can_i_submit_poster_order_online
+> check_poster_online_order
+
+## poster details 24
+> check_greeting
+* colors_and_sizes_of_poster
+  - utter_colors_and_sizes_of_poster
+> check_poster_details
+
+## poster pickup time 25
+> check_greeting
+* time_to_print_poster
+  - utter_time_to_print_poster
+> poster_pickup_time
+
+## poster file type 26
+> check_greeting
+* file_type_to_print_poster
+  - utter_file_type_to_print_poster
+> poster_file_type
+
+## poster pickup location 27
+> check_greeting
+* poster_pickup_location
+  - utter_poster_pickup_location
+> poster_pickup_location
+
+## reserve study room 28
+> check_greeting
+* reserve_study_room
+  - utter_study_room_reserve
+> check_reserve_study_room
+
+## dining services hours 29
+> check_greeting
+* hours_of_dining_services
+  - utter_hours_of_dining_services
+> check_dining_services_hours
+
+## provide CINAHL link
+> check_greeting
+* access_CINAHL_database
+  - utter_access_CINAHL_database
+  - utter_input_in_CINAHL
+> provide_CINAHL_link
+
+## guest library comuter access
+> check_greeting
+* can_a_guest_use_library_computers
+  - utter_guest_library_computer_access
+> guest_library_comuter_access
+
+## good bye path
+> check_find_research_article
+> check_cite_an_article_using_apa_path
+> RN_to_BSN_homepage_link
+> check_author_education_background
+> check_resource_guide_for_nursing
+> check_plagiarism_guide
+> check_uta_nursing_title_page
+> check_nursing_librarian_email
+> check_pubmed_articles
+> check_difference_between_qq_articles
+> check_link_for_the_apa_exposed
+> check_tell_if_article_is_peer_reviewed
+> check_add_money_cash
+> check_add_money_credit
+> check_library_alumni_visitor_access
+> check_library_alumni_visitor_wireless_internet_access
+> check_plotter_printer_location
+> check_plotter_cost
+> check_poster_payment
+> check_poster_online_order
+> check_poster_details
+> poster_pickup_time
+> poster_file_type
+> poster_pickup_location
+> check_reserve_study_room
+> check_dining_services_hours
+> provide_CINAHL_link
+> guest_library_comuter_access
+> check_poster_payment_temp_card
+- utter_did_that_help
 * affirm
+  - utter_gratitude
+* goodbye
   - utter_goodbye
   - utter_start_chat_again_button
   - action_restart

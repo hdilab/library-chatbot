@@ -11,6 +11,7 @@ from typing import Any, Text, Dict, List
 
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+from rasa_sdk.events import UserUtteranceReverted, ActionReverted
 
 
 class ActionHelloWorld(Action):
@@ -57,3 +58,15 @@ class ActionHelloWorld(Action):
         dispatcher.utter_message(utter_database_link)
 
         return []
+
+
+class ActionIsBot(Action):
+    """Revertible mapped action for utter_is_bot"""
+
+    def name(self):
+        return "action_insult"
+
+    def run(self, dispatcher, tracker, domain):
+        dispatcher.utter_template("utter_respond_insult", tracker)
+        return [UserUtteranceReverted()]
+

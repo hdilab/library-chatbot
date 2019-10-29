@@ -200,10 +200,8 @@
 
 ## intent:link_for_apa_exposed
 - link for the presentation entitled "APA exposed: Everything you always wanted to know about APA format but were afraid to ask"?
-- Everything you always wanted to know about APA format but were afraid to ask
 - APA exposed
 - apa exposed
-- wanted to know about APA format
 
 ## intent:nursing_librarians_email
 - can you give me the email of one of the nursing librarians?
@@ -235,6 +233,7 @@
 - location of plotter printer
 - where is plotter printer
 - plotter printer location
+- where is the poster printer
 
 ## intent:poster_pickup_location
 - Where can I pick up my poster?
@@ -282,14 +281,12 @@
 - guide for nursing
 - find the resource guide for nursing
 
-## intent:stop
-- /stop
-
 ## intent:submit_poster_order_online
 - Can I submit an poster order online?
 - how to submite poster order Online
 - submit poster order Online
 - poster submission online
+- submit order online
 
 ## intent:thanks
 - thank you
@@ -320,3 +317,21 @@
 
 ## synonym:Nursing
 - {"area_of_study": "Nursing"}
+
+## intent:can_a_guest_use_library_computers
+- can a guest use library computers?
+- how can I use a library computer as a guest?
+- guest can use library computers 
+
+##intent:insult
+- you are stupid
+- Fuck you
+- stupid bot
+- you are useless
+- fuck
+- moron
+- hey shorty
+- motherfucker
+- slut
+- whore
+
