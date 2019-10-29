@@ -24,12 +24,6 @@
 - yeah
 - Yeah
 - yep
-- Yes, I need articles about [obesity in adolescent](articles_domain)
-- yes, I need articles about [World War](articles_domain)
-- yes, I need articles on [History](articles_domain)
-- yes, I am looking articles on [Literature](articles_domain)
-- Yes, I need articles about [World War](articles_domain)
-- Yes, I need articles about [World War](articles_domain)
 - Yes,
 - Sure
 
@@ -297,6 +291,12 @@
 - thank you so much
 - Thank you
 - Yes, thank you
+
+## intent:acknowledge
+- ok
+- got it
+- understood
+- k
 
 ## intent:time_to_print_poster
 - How long will my poster take to print?

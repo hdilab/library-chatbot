@@ -1,7 +1,6 @@
 intents:
 - hours_of_dining_services
 - plagiarism_tutorial_in
-- greet
 - deny
 - affirm
 - choose
@@ -16,7 +15,6 @@ intents:
 - file_type_to_print_poster
 - find_RN_to_BSN_program_homepage
 - find_authors_education_background
-- goodbye
 - guest_visitor_alumni_library_access
 - guest_visitor_alumni_wireless_internet
 - how_to_know_type_of_articles
@@ -33,12 +31,15 @@ intents:
 - submit_poster_order_online
 - time_to_print_poster
 - title_page_for_uta_nursing_department
-- thanks
 - can_a_guest_use_library_computers
 - cash
 - credit
 - get_temporary_card
 - insult: {triggers: action_insult}
+- greet: {triggers: utter_greet}
+- goodbye: {triggers: utter_goodbye}
+- thanks
+- acknowledge
 entities:
 - area_of_study
 - articles_domain
@@ -65,7 +66,7 @@ templates:
   utter_pay_by_credit_response:
   - text: Visit https://www.uta.edu/campus-ops/mavexpress/ and load money to your MavExpress card. You can find more information at <https://library.uta.edu/printing>
   utter_anymore_questions:
-  - text: Do you have any more questions?
+  - text: Great. Is there anything else I can help you with?
   utter_article_is_peer_reviewed:
   - text: If you searched for peer reviewed articles in a database, your results will be restricted to only peer reviewed content. Otherwise search online for the journal's website to see if it states that it's articles are peer reviewed.
   utter_article_type_from_articles:
@@ -214,6 +215,10 @@ templates:
     - text: To purchase a temporary print card you can visit the MAV Exporess machine located on the 2nd floor of the Central Library. You can purchase a temporary card for $1.
   utter_respond_insult:
     - text: That's not very nice
+  utter_handle_affirmation:
+    - text: Glad I could be of assistance. Is there anything else I could help you with?
+  utter_have_a_great_day:
+    - text: Have a great day!
 actions:
 - action_insult
 - action_database_link
@@ -267,3 +272,5 @@ actions:
 - utter_pay_by_credit_response
 - utter_get_temporary_card
 - utter_respond_insult
+- utter_handle_affirmation
+- utter_have_a_great_day
