@@ -232,7 +232,7 @@ templates:
       title: Other/Just curious
     text: What are the articles for?
   utter_class_writing_response:
-    - text: "In that case, I recommend visiting libguides.uta.edu/az.php and selecting a database based on your research topic. Each database is listed alphabetically. Read its description and click on the name of one you want to begin searching. If you have more questions, you can contact your librarian listed here: library.uta.edu/subject-librarians"
+    - text: "In that case, I recommend visiting https://www.libguides.uta.edu/az.php and selecting a database based on your research topic. Each database is listed alphabetically. Read its description and click on the name of one you want to begin searching. If you have more questions, you can contact your librarian listed here: library.uta.edu/subject-librarians"
   utter_other_articles:
     - text: "Check out https://www.libguides.uta.edu to see guides to finding articles. Clicke on your subject or topic area and visit a guide of interest. If you have more questions, email askus@uta.edu"
 actions:
