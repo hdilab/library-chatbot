@@ -40,6 +40,9 @@ intents:
 - goodbye: {triggers: utter_goodbye}
 - thanks
 - acknowledge
+- class_writing_assignment
+- other
+- research_project
 entities:
 - area_of_study
 - articles_domain
@@ -76,7 +79,7 @@ templates:
   - text: Okay! Let's start again, please rephrase your question?
   - text: "No issues! Let's try this again.\n Please repeat your query?"
   utter_ask_article_for_research_or_project:
-  - text: Are you looking for journal articles for a research paper or project?
+  - text: Are you looking for journal articles for a research paper/project?
   utter_ask_field_of_study:
   - buttons:
     - payload: '/choose{"area_of_study": "nursing"}'
@@ -110,8 +113,8 @@ templates:
   utter_did_you_open_link:
   - text: Did you open the link?
   utter_difference_between_qualitative_quantative_articles:
-  - text: "Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553\
-      \ \n There is a lot of good content throughout the guide. Check it out and see."
+  - text: "You could review the following link for more information: https://libguides.uta.edu/c.php?g=898050&p=6460553\
+      \ \n There is a lot of good content throughout the guide."
   utter_file_type_to_print_poster:
   - text: We recommend using any of the following; JPG, PNG, or PDF.
   utter_find_authors_education_background:
@@ -183,7 +186,7 @@ templates:
       title: How to load money onto Mav ID?
     text: You can use money loaded onto your Mav Id or a temporary print card.
   utter_plagiarism_tutorial_link:
-  - text: Please proceed to Acknowledging Sources [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
+  - text: Please proceed to the "Acknowledging Sources" plagiarism tutorial [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
   utter_plotter_printer_location:
   - text: The plotter is located on the second floor of the Central Library in the
       alcove to the right of the Food Market.
@@ -219,6 +222,19 @@ templates:
     - text: Glad I could be of assistance. Is there anything else I could help you with?
   utter_have_a_great_day:
     - text: Have a great day!
+  utter_ask_article_type:
+  - buttons:
+    - payload: /class_writing_assignment
+      title: Class Writing Assignment
+    - payload: /research_project
+      title: Research Project
+    - payload: /other
+      title: Other/Just curious
+    text: What are the articles for?
+  utter_class_writing_response:
+    - text: "In that case, I recommend visiting libguides.uta.edu/az.php and selecting a database based on your research topic. Each database is listed alphabetically. Read its description and click on the name of one you want to begin searching. If you have more questions, you can contact your librarian listed here: library.uta.edu/subject-librarians"
+  utter_other_articles:
+    - text: "Check out https://www.libguides.uta.edu to see guides to finding articles. Clicke on your subject or topic area and visit a guide of interest. If you have more questions, email askus@uta.edu"
 actions:
 - action_insult
 - action_database_link
@@ -274,3 +290,7 @@ actions:
 - utter_respond_insult
 - utter_handle_affirmation
 - utter_have_a_great_day
+- utter_ask_article_type
+- action_article_type
+- utter_other_articles
+- utter_class_writing_response

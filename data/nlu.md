@@ -335,3 +335,13 @@
 - slut
 - whore
 
+##intent:class_writing_assignment
+- class_writing_assignment
+- Class writing assignment
+
+##intent:research_project
+- research_project
+- Research Project
+
+##intent:other
+- other

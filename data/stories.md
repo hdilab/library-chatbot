@@ -7,6 +7,33 @@
     - slot{"area_of_study": "Nursing"}
     - action_database_link
 
+## find research article 1 deny path 1
+* quantitative_research_article
+    - utter_ask_article_for_research_or_project
+* deny
+    - utter_ask_article_type
+* class_writing_assignment
+    - utter_ask_field_of_study
+* choose{"area_of_study": "Nursing"}
+    - slot{"area_of_study": "Nursing"}
+    - action_database_link
+    
+## find research article 1 deny path 2
+* quantitative_research_article
+    - utter_ask_article_for_research_or_project
+* deny
+    - utter_ask_article_type
+* research_project
+    - utter_class_writing_response
+
+## find research article 1 deny path 3
+* quantitative_research_article
+    - utter_ask_article_for_research_or_project
+* deny
+    - utter_ask_article_type
+* other
+    - utter_other_articles
+
 ## cite an article using APA path 4
 * cite_an_article_using_apa
   - utter_cite_an_article_using_apa
