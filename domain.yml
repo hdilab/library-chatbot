@@ -3,7 +3,6 @@ intents:
 - plagiarism_tutorial_in
 - deny
 - affirm
-- choose
 - access_CINAHL_database
 - add_money_to_print_quota
 - article_is_peer_reviewed
@@ -35,6 +34,7 @@ intents:
 - cash
 - credit
 - get_temporary_card
+- choose
 - insult: {triggers: action_insult}
 - greet: {triggers: utter_greet}
 - goodbye: {triggers: utter_goodbye}
@@ -43,6 +43,14 @@ intents:
 - class_writing_assignment
 - other
 - research_project
+- check_out_book
+- librarian_information
+- library_printing
+- get_to_databases
+- printing_personal_machine
+- netid_username
+- netid_plus
+- vpn
 entities:
 - area_of_study
 - articles_domain
@@ -55,15 +63,14 @@ slots:
     initial_value: Nursing
 templates:
   utter_access_CINAHL_database:
-  - text: "Click for CINAHL:  https://libguides.uta.edu/cinahl\
-      \ . \nOff-campus? Log in using your NetID username and password."
+  - text: "Click for CINAHL:  https://libguides.uta.edu/cinahl If you are Off-campus, you may be prompted to login before seeing the database. If so, use your NetID username and password."
   utter_add_money_to_print_quota:
   - buttons:
     - payload: '/cash'
       title: Cash
     - payload: '/credit'
       title: Credit Card
-    text: Paying by Cash or Credit Card
+    text: Are you paying by Cash or Card?
   utter_pay_by_cash_response:
   - text: Use the Print Card Vending machine. There is one on the 2nd floor of the Central Library and one in the UC. You can find more information at <https://library.uta.edu/printing>
   utter_pay_by_credit_response:
@@ -71,7 +78,7 @@ templates:
   utter_anymore_questions:
   - text: Great. Is there anything else I can help you with?
   utter_article_is_peer_reviewed:
-  - text: If you searched for peer reviewed articles in a database, your results will be restricted to only peer reviewed content. Otherwise search online for the journal's website to see if it states that it's articles are peer reviewed.
+  - text: If you searched for peer reviewed articles in a database, your results will be restricted to only peer reviewed content. Otherwise search online for the journal's website to see if it states that its articles are peer reviewed.
   utter_article_type_from_articles:
   - text: "They will not always use the words qualitative or quantitative or mixed\
       \  methods.\n You will need to see how they describe the design in the methodology."
@@ -100,7 +107,7 @@ templates:
   utter_can_i_submit_poster_order_online:
   - text: No, we can offer assistance with formatting, but we do not take orders. To print a poster, use the plotter printer on the 2nd floor of the library.
   utter_cite_an_article_using_apa:
-  - text: Please use the following link libguides.uta.edu/apa
+  - text: Please use the following link https://www.libguides.uta.edu/apa
   utter_colors_and_sizes_of_poster:
   - text: All colors are available. The length can be however long you would like
       with a maximum width of 42 inches.
@@ -173,11 +180,9 @@ templates:
       \ own tab. \nYou'll probably need to log in using your UTA Net ID. Once you\
       \ enter your Net ID and password, \nsearch with the general search terms"
   utter_nursing_librarians_email:
-  - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
-  - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
+  - text: "You can contact the nursing librarians using the following email:  nursinglibrarians@uta.edu"
   utter_open_pubmed_website:
-  - text: 'Visit libguides.uta.edu/pubmed and type a simple search at the top.\
-      \ To access an article, click its title & then the UTA link at the top right.'
+  - text: 'Visit https://www.libguides.uta.edu/pubmed and type a simple search at the top. To access an article, click its title & then the UTA link at the top right.'
   utter_pay_for_the_poster:
   - buttons:
     - payload: /get_temporary_card
@@ -188,8 +193,7 @@ templates:
   utter_plagiarism_tutorial_link:
   - text: Please proceed to the "Acknowledging Sources" plagiarism tutorial [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
   utter_plotter_printer_location:
-  - text: The plotter is located on the second floor of the Central Library in the
-      alcove to the right of the Food Market.
+  - text: You can find plotter printers in the 2nd floor of the Central Library, the Science and Engineering Library, and the Architecture and Fine Arts Library.
   utter_poster_pickup_location:
   - text: The print process is self-service so you will be sending the poster to the
       plotter and you’re responsible for picking up prints following completion. The
@@ -235,6 +239,20 @@ templates:
     - text: "In that case, I recommend visiting https://www.libguides.uta.edu/az.php and selecting a database based on your research topic. Each database is listed alphabetically. Read its description and click on the name of one you want to begin searching. If you have more questions, you can contact your librarian listed here: library.uta.edu/subject-librarians"
   utter_other_articles:
     - text: "Check out https://www.libguides.uta.edu to see guides to finding articles. Clicke on your subject or topic area and visit a guide of interest. If you have more questions, email askus@uta.edu"
+  utter_check_out_books:
+    - text: "You can search for books on the UTA Library website if available, and with the call number, you can find the book where it is located. Once you do, with your Mav ID you can check it out from Guest Services on the first floor."
+  utter_library_printing:
+    - text: "Visit https://library.uta.edu/printing for instructions."
+  utter_get_to_databases:
+    - text: "You can use the link: https://libguides.uta.edu/az.php to access the databases. You can also use: https://libguides.uta.edu/?b=s to search by subject."
+  utter_printing_personal_machine:
+    - text: "You can print from your personal device using the following link: https://pharosmobileprt.uta.edu/MyPrintCenter/. Log in using your NetID and password. The file you wish to print must be downloaded onto your personal device. Here is guide for more information: https://ask.uta.edu/loader.php?fid=2869&type=1&key=52369283f49efc780b997fff4119c541"
+  utter_netid_username:
+    - text: "You can retrieve NETID at https://netidss.uta.edu/sspr/public/forgottenusername"
+  utter_netid_plus:
+    - text: "Enroll in NetIDplus, https://webapps.uta.edu/oit/netidplus/login. You must enroll in NetIDplus before you can install Pulse Secure VPN, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi"
+  utter_vpn:
+    - text: "If you have difficulties accessing Library resources, try a Pulse Secure VPN connection, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi. Read the instructions; you first need to enroll in NetIDplus. If you need help with VPN, contact the OIT Help Desk at 817-272-2208."
 actions:
 - action_insult
 - action_database_link
@@ -294,3 +312,10 @@ actions:
 - action_article_type
 - utter_other_articles
 - utter_class_writing_response
+- utter_check_out_books
+- utter_library_printing
+- utter_get_to_databases
+- utter_printing_personal_machine
+- utter_netid_username
+- utter_netid_plus
+- utter_vpn

@@ -42,15 +42,6 @@
 - get articles from PUBMED
 - PubMed articles from library computers
 
-## intent:choose
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
-- /choose[{"area_of_study": "History"}](area_of_study:History)
-- /choose[{"area_of_study": "Kinesiology"}](area_of_study:Kinesiology)
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
-- nursing
-- Nursing
-
 ## intent:cite_an_article_using_apa
 - How do you cite an article and mission statement using APA?
 - cite an article using APA
@@ -66,6 +57,10 @@
 - color of poster
 - colors of posters
 - sizes of poster
+- can I print a poster that's 20 by 20
+- can I print a poster that's 14 * 14
+- How bug can I print my poster
+- What dimensions can I print a poster
 
 ## intent:cost_to_print_the_plotter
 - How much does it cost to print a poster?
@@ -74,6 +69,7 @@
 - plotter's cost
 - cost of plotter printer
 - cost of plotter
+- how much to print posters
 
 ## intent:deny
 - no
@@ -100,12 +96,16 @@
 - difference between quantitative and qualitative articles
 - differences between qualitative and quantitative research articles
 - what is the difference between quantitative and qualitative articles?
+- is the article quantitative or qualitative?
+- how can i tell if an article is qualitative/quantitative?
 
 ## intent:file_type_to_print_poster
 - What file type do I need to print poster?
 - file type to print the poster
 - type of file to print poster
 - poster file type to print
+- What file do I need for a poster
+- What kind of file do I need to print a poster?
 
 ## intent:find_RN_to_BSN_program_homepage
 - How can I find the RN to BSN Program Homepage?
@@ -154,6 +154,10 @@
 - how can a guest use the library
 - how can a community visitor use the library
 - how can an alumni use the library
+- can a guest enter the library
+- can guests use the library
+- are guests allowed to use the UTA library
+- guests use the library
 
 ## intent:guest_visitor_alumni_wireless_internet
 - Can a guest use the wireless
@@ -206,6 +210,7 @@
 - please provide me the email of nursing librarian
 - i am looking for nursing librarian email
 - Email of nursing librarian
+- I need help on a research paper, which Librarians can I contact for nursing?
 
 ## intent:pay_for_the_poster
 - How do I pay for a poster?
@@ -228,6 +233,9 @@
 - where is plotter printer
 - plotter printer location
 - where is the poster printer
+- Where can I print a poster
+- Where is the poster printer
+- How do I print a poster
 
 ## intent:poster_pickup_location
 - Where can I pick up my poster?
@@ -302,26 +310,24 @@
 - How long will my poster take to print?
 - time to print the poster
 - printing time of the poster
+- how long does printing take
+- how much time will it take to print my poster
 
 ## intent:title_page_for_uta_nursing_department
 - How do I do the title page that is required by UTA's Nursing department?
 - title page for uta nursing department
 - title page for UTA Nursing department
 - how to do title page for the nursing department
-
-## synonym:History
-- {"area_of_study": "History"}
-
-## synonym:Kinesiology
-- {"area_of_study": "Kinesiology"}
-
-## synonym:Nursing
-- {"area_of_study": "Nursing"}
+- CONHI title page
 
 ## intent:can_a_guest_use_library_computers
 - can a guest use library computers?
 - how can I use a library computer as a guest?
 - guest can use library computers 
+- how can a guest use a library computer
+- how can a guest use a computer in the library
+- can a guest use computers
+- Can I use the library computers if I’m not a student?
 
 ##intent:insult
 - you are stupid
@@ -345,3 +351,41 @@
 
 ##intent:other
 - other
+
+##intent:check_out_book
+- how can i check out a book
+- how can i check out a book from the library
+- checking out books from the library
+
+##intent:librarian_information
+- Where do I find information on Librarians by subject?
+- Librarian information
+
+##intent:library_printing
+- how can i print at the library
+- how can i print documents
+
+## intent:get_to_databases
+- how do i get to databases
+
+## intent:printing_personal_machine
+- Can I print from my own laptop? 
+- Do I have to use the library computers to print?
+- How can I print from my mobile
+- How can I print from my laptop or mobile
+
+## intent:netid_username
+- What is my NETID username?
+- How do I lookup my NETID username?
+- I have forgotten my NETID
+- How do I get my NETID
+
+##intent:netid_plus
+- What is NETID plus?
+- What is NETID plus used for?
+
+##intent:vpn
+- How do I connect to the VPN
+- What is pulse
+- What is the VPN
+- Access library resources from off campus.

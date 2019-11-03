@@ -59,7 +59,7 @@
   - utter_title_page_for_nursing_department
 
 ## nursing librarian email 10
-* nursing_librarians_email
+* nursing_librarians_email OR librarian_information
   - utter_nursing_librarians_email
 
 ## provide pubmed articles 11
@@ -161,3 +161,31 @@
   - utter_handle_affirmation
 * deny
   - utter_have_a_great_day
+  
+## check out books
+* check_out_book
+  - utter_check_out_books
+  
+## printing documents
+* library_printing
+  - utter_library_printing
+  
+## get to databases
+* get_to_databases
+  - utter_get_to_databases
+  
+## printing personal machine
+* printing_personal_machine
+  - utter_printing_personal_machine 
+  
+## netid username
+* netid_username
+  - utter_netid_username
+  
+## netid plus
+* netid_plus
+  - utter_netid_plus
+  
+## vpn
+* vpn
+  - utter_vpn
