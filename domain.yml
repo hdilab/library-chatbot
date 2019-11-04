@@ -51,6 +51,20 @@ intents:
 - netid_username
 - netid_plus
 - vpn
+- alma
+- search_cinahl
+- course_reserves
+- etd
+- ezproxy_url
+- inter_library_loan
+- interview_room
+- journal_search
+- mymav
+- off_campus_access
+- oit_chat
+- oit_help_desk
+- silent_sign_in
+- writing_help
 entities:
 - area_of_study
 - articles_domain
@@ -253,6 +267,35 @@ templates:
     - text: "Enroll in NetIDplus, https://webapps.uta.edu/oit/netidplus/login. You must enroll in NetIDplus before you can install Pulse Secure VPN, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi"
   utter_vpn:
     - text: "If you have difficulties accessing Library resources, try a Pulse Secure VPN connection, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi. Read the instructions; you first need to enroll in NetIDplus. If you need help with VPN, contact the OIT Help Desk at 817-272-2208."
+  utter_alma:
+    - text: "To improve services for students and faculty, UTA Libraries upgraded its automated systems to enhance information discovery and research.   For details visit, https://library.uta.edu/news/uta-libraries-launches-alma. If you have feedback or need further information, contact your subject librarian, https://library.uta.edu/subject-librarians. "
+  utter_search_cinahl:
+    - text: "Watch the video to understand searching CINAHL, https://youtu.be/OTvSwEZ1pP4. You can apply this information to searching other databases for any topic."
+  utter_course_reserves:
+    - text: "Search using your course number or instructor's name. https://uta.summon.serialssolutions.com/#!/course_reserves "
+  utter_etd:
+    - text: "For formatting questions, contact a member of your committee. For information about submitting your thesis or dissertation, visit this guide, http://libguides.uta.edu/etds. If you have further questions, contact Brittany Griffiths, brittany.griffiths@uta.edu "
+  utter_ezproxy_url:
+    - text: "You can use the following url https://login.ezproxy.uta.edu/login?url="
+  utter_inter_library_loan:
+    - text: "Use InterLibrary Loan to request resources the Library does not own. https://uta.illiad.oclc.org/illiad/index.htm"
+  utter_interview_room:
+    - text: "To request an interview room in the UTA Lockheed Martin Career Development Center, https://www.uta.edu/careers/students/Room%20Request.php"
+  utter_journal_search:
+    - text: "Go to the library homepage, library.uta.edu. In the 'Research' column, click on 'Journal Search.' Enter a journal title or browse by subject."
+  utter_mymav:
+    - text: "MyMav Fluid Resource Guide, https://uta.service-now.com/kb_view.do?sysparm_article=KB0011170. If you do not find the answer on the guide, contact the OIT Help Desk at 817-272-2208 or visit OIT chat at https://www.uta.edu/help/chat/"
+  utter_off_campus_access:
+    - text: "Here's a guide to help troubleshoot off-campus access issues, https://libguides.uta.edu/offcampus"
+  utter_oit_chat:
+    - text: "I suggest you contact OIT for help with your tech issue. Call 817-272-2208 or use the OIT chat service at https://www.uta.edu/help/chat/ "
+  utter_oit_help_desk:
+    - text: "For technical issues (ex. UTA email, VPN, NetIDplus) contact the OIT Help Desk, https://oit.uta.edu/support/index.php"
+  utter_silent_sign_in:
+    - text: "If you receive a 'silent sign-in' error message, try: 1) hit the back arrow; 2) sign-in to your UTA email and try accessing the resource again; 3) clear your browser cache."
+  utter_writing_help:
+    - text: "For help with your writing, contact the UTA Writing Center, http://www.uta.edu/owl/, to set an appointment with a writing consultant. For additional resources, visit this guide, http://libguides.uta.edu/researchprocess/write."
+
 actions:
 - action_insult
 - action_database_link
@@ -319,3 +362,17 @@ actions:
 - utter_netid_username
 - utter_netid_plus
 - utter_vpn
+- utter_alma
+- utter_search_cinahl
+- utter_course_reserves
+- utter_etd
+- utter_ezproxy_url
+- utter_inter_library_loan
+- utter_interview_room
+- utter_journal_search
+- utter_mymav
+- utter_off_campus_access
+- utter_oit_chat
+- utter_oit_help_desk
+- utter_silent_sign_in
+- utter_writing_help

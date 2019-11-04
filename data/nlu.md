@@ -389,3 +389,70 @@
 - What is pulse
 - What is the VPN
 - Access library resources from off campus.
+- how to access vpn
+
+##intent:alma
+- What is the UTA alma?
+- What is alma
+
+##intent:search_cinahl
+- How do I search CINAHL?
+- Can you tell me how to search CINAHL
+- How do you use CINAHL
+
+##intent:course_reserves
+- What are course reserves
+- Where can I fin course reserves
+
+##intent:etd
+- etd
+- Electronic Thesis and Defense
+- Where can i find etds
+- where can i find the Electronic Thesis and Defense
+- what is etd
+
+##intent:ezproxy_url
+- What's the link for ezproxy
+- Where can I find the link for ezproxy
+
+##intent:inter_library_loan
+- what is the inter loan library
+- what is ill
+
+##intent:interview_room
+- How can i book an interview room
+- where can i take an interview on campus
+- are there rooms I can book for an interview.
+- where can i take a phone interview
+- where can i take a skype interview
+
+##intent:journal_search
+- Can you give me the link to search journals
+- how can i search through journals
+
+##intent:mymav
+- How do i access mymav
+- Cna you give me information on mymav
+
+##intent:off_campus_access
+- how can i access library resources from off campus
+- I am unable to access resources from off campus
+
+##intent:oit_chat
+- can you give me details to contact OIT
+- how do i contact OIT
+
+##intent:oit_help_desk
+- I am having trouble with my email
+- I am unable to access my email
+- I am having issues with the VPN
+- I am having issues with NETIDplus
+- can you give me contact details for OIT
+
+##intent:silent_sign_in
+- I am receiving a silent sign in error
+- what to do if I see a silent sign in error
+
+##intent:writing_help
+- Who can help guide me while writing my thesis
+- writing help

@@ -189,3 +189,59 @@
 ## vpn
 * vpn
   - utter_vpn
+  
+## alma
+* alma
+  - utter_alma
+  
+## search cinahl
+* search_cinahl
+  - utter_search_cinahl  
+
+## course reserves
+* course_reserves
+  - utter_course_reserves
+  
+## etd
+* etd
+  - utter_etd
+  
+## ezproxy url
+* ezproxy_url
+  - utter_ezproxy_url
+
+## inter library loan
+* inter_library_loan
+  - utter_inter_library_loan
+  
+## interview room
+* interview_room
+  - utter_interview_room
+  
+## journal search
+* journal_search
+  - utter_journal_search
+  
+## mymav
+* mymav
+  - utter_mymav
+  
+## offcampus
+* off_campus_access
+  - utter_off_campus_access
+  
+## oit chat
+* oit_chat
+  - utter_oit_chat
+  
+## oit help desk
+* oit_help_desk
+  - utter_oit_help_desk
+  
+## silent sign in
+* silent_sign_in
+  - utter_silent_sign_in
+  
+## writing help
+* writing_help
+  - utter_writing_help
