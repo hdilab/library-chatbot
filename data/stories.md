@@ -1,5 +1,5 @@
 ## find research article 1
-* quantitative_research_article
+* research_article
     - utter_ask_article_for_research_or_project
 * affirm
     - utter_ask_field_of_study
@@ -8,7 +8,7 @@
     - action_database_link
 
 ## find research article 1 deny path 1
-* quantitative_research_article
+* research_article
     - utter_ask_article_for_research_or_project
 * deny
     - utter_ask_article_type
@@ -19,7 +19,7 @@
     - action_database_link
     
 ## find research article 1 deny path 2
-* quantitative_research_article
+* research_article
     - utter_ask_article_for_research_or_project
 * deny
     - utter_ask_article_type
@@ -27,7 +27,7 @@
     - utter_class_writing_response
 
 ## find research article 1 deny path 3
-* quantitative_research_article
+* research_article
     - utter_ask_article_for_research_or_project
 * deny
     - utter_ask_article_type
@@ -156,12 +156,18 @@
 * can_a_guest_use_library_computers
   - utter_guest_library_computer_access
 
-## thank you path
+## thank you path deny
 * thanks OR acknowledge
   - utter_handle_affirmation
 * deny
   - utter_have_a_great_day
   
+## thank you path affirm
+* thanks OR acknowledge
+  - utter_handle_affirmation
+* affirm
+  - utter_what_can_i_help_you_with  
+
 ## check out books
 * check_out_book
   - utter_check_out_books
@@ -245,3 +251,15 @@
 ## writing help
 * writing_help
   - utter_writing_help
+  
+## find quantitative research article
+* quantitative_research_article
+    - utter_quantitative_research_article
+    
+## plagiarism
+* plagiarism
+    - utter_plagiarism
+    
+## book_location
+* book_location
+    - utter_book_location

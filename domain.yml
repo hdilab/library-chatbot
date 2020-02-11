@@ -24,6 +24,7 @@ intents:
 - plotter_printer_location
 - poster_pickup_location
 - quantitative_research_article
+- research_article
 - reserve_study_room
 - resource_guide_for_nursing
 - stop
@@ -65,6 +66,8 @@ intents:
 - oit_help_desk
 - silent_sign_in
 - writing_help
+- plagiarism
+- book_location
 entities:
 - area_of_study
 - articles_domain
@@ -100,7 +103,12 @@ templates:
   - text: Okay! Let's start again, please rephrase your question?
   - text: "No issues! Let's try this again.\n Please repeat your query?"
   utter_ask_article_for_research_or_project:
-  - text: Are you looking for journal articles for a research paper/project?
+  - buttons:
+    - payload: '/affirm'
+      title: Yes
+    - payload: '/deny'
+      title: No
+    text: Are you looking for journal articles for a research paper/project?
   utter_ask_field_of_study:
   - buttons:
     - payload: '/choose{"area_of_study": "nursing"}'
@@ -153,12 +161,12 @@ templates:
     - payload: /difference_between_qualitative_quantative_articles
       title: What is the difference between quantitative and qualitative articles?
     - payload: /quantitative_research_article
-      title: How can I find research articles?
+      title: How can I find quantitative research articles?
     - payload: /find_RN_to_BSN_program_homepage
       title: How can I find RN to BSN program homepage?
     - payload: /plagiarism_tutorial_in
       title: Where can I find the plagiarism tutorial?
-    text: "Hello, I am a UTA Library Chatbot. How can I help you? \nSelect an option here or type your question\
+    text: "Hi, I’m Luz, a Chatbot here to answer common library questions. Try me out and see if I answer your question. How can I help you? \nSelect an option here or type your question\
       \ below."
   utter_guest_computer_account:
   - text: More information on what is required to request an account is available
@@ -295,6 +303,14 @@ templates:
     - text: "If you receive a 'silent sign-in' error message, try: 1) hit the back arrow; 2) sign-in to your UTA email and try accessing the resource again; 3) clear your browser cache."
   utter_writing_help:
     - text: "For help with your writing, contact the UTA Writing Center, http://www.uta.edu/owl/, to set an appointment with a writing consultant. For additional resources, visit this guide, http://libguides.uta.edu/researchprocess/write."
+  utter_quantitative_research_article:
+    - text: "You can find information about Quantitative articles at https://libguides.uta.edu/quantitative_and_qualitative_research"
+  utter_what_can_i_help_you_with:
+    - text: "What can I help you with?"
+  utter_plagiarism:
+    - text: "You can find more details on plagiarism using https://www.scribbr.com/category/plagiarism/"
+  utter_book_location:
+    - text: "You can find books at The Science and Engineering Library, The Achitecture and Fine Arts Library or at the 3rd, 4th and 5th floors of the Central Library"
 
 actions:
 - action_insult
@@ -376,3 +392,7 @@ actions:
 - utter_oit_help_desk
 - utter_silent_sign_in
 - utter_writing_help
+- utter_quantitative_research_article
+- utter_what_can_i_help_you_with
+- utter_plagiarism
+- utter_book_location

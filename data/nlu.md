@@ -232,10 +232,9 @@
 - location of plotter printer
 - where is plotter printer
 - plotter printer location
-- where is the poster printer
 - Where can I print a poster
 - Where is the poster printer
-- How do I print a poster
+- Where is the poster printer location
 
 ## intent:poster_pickup_location
 - Where can I pick up my poster?
@@ -252,8 +251,12 @@
 - quantitative research
 - how can I get quantitative research articles?
 - don't know how to get quantitative research article
-- i am looking for research articles
 - i am looking for quantitative research articles
+- /quantitative_research_article
+
+
+## intent:research_article
+- i am looking for research articles
 - how do i find a research article?
 - How do I find a research article?
 - How do I find a journal
@@ -264,12 +267,12 @@
 - How do I find a research articles?
 - How do I find a research articles
 - How do I find a research article?
-- /quantitative_research_article
 - How do I find an article?
 - I need an article
 - journal articles
 - need 2 articles
 - How can I find research articles?
+
 
 ## intent:reserve_study_room
 - How do I reserve a study room?
@@ -351,6 +354,8 @@
 
 ##intent:other
 - other
+- something else
+- not this
 
 ##intent:check_out_book
 - how can i check out a book
@@ -364,9 +369,12 @@
 ##intent:library_printing
 - how can i print at the library
 - how can i print documents
+- where can i print
+- where can i print documents
 
 ## intent:get_to_databases
 - how do i get to databases
+- which database should i use
 
 ## intent:printing_personal_machine
 - Can I print from my own laptop? 
@@ -456,3 +464,15 @@
 ##intent:writing_help
 - Who can help guide me while writing my thesis
 - writing help
+
+##intent:plagiarism
+- What is plagiarism?
+- How do I know if it's plagiarized?
+- How do I know if I plagiarized?
+- How do I know if it is plagiarism?
+
+##intent:book_location
+- Where are the books?
+- Where are all the books?
+- Where are the print?
+- Where are print journals?

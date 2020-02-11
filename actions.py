@@ -24,31 +24,29 @@ class ActionHelloWorld(Action):
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         area_of_study_student = tracker.get_slot('area_of_study')
-        var = area_of_study_student + "Hi"
-        # print(area_of_study_student)
 
-        if area_of_study_student in ("nursing"):
+        if area_of_study_student == "nursing":
             utter_database_link = "In that case, I recommend searching CINAHL database at https://libguides.uta.edu/cinahl. \
                                     Off-campus? Log in using your NetID username\
                                     and password."
         elif area_of_study_student == "social_work":
-            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/SocialWorkInfo. Once you open the link, \
+            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/SocialWork. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
             are also listed here."
         elif area_of_study_student == "business":
-            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/BusinessInfo. Once you open the link, \
+            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/Business. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
             are also listed here."
         elif area_of_study_student == "history":
-            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/HistoryInfo. Once you open the link, \
+            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/History. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
             are also listed here."
-        elif area_of_study_student == "history":
-            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/EnglishInfo. Once you open the link, \
+        elif area_of_study_student == "english":
+            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/English. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
             are also listed here."
         elif area_of_study_student == "chemistry":
-            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/CHEMInfo. Once you open the link, \
+            utter_database_link = "In that case, I recommend opening this link: https://libguides.uta.edu/chemistry. Once you open the link, \
             click on the Databases tab, and you may select one of the database  with the Best Bets. Additional database \
             are also listed here."
         else:
