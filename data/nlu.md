@@ -476,3 +476,12 @@
 - Where are all the books?
 - Where are the print?
 - Where are print journals?
+- Where can i find books
+- location of books
+- Where can i find print journals?
+
+##intent:central_library_location
+- How do i get to the central library
+- Where is the Central Library
+- Directions to the Central Library
+- location of the central library
