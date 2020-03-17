@@ -1,7 +1,6 @@
 import flask
 from flask import request
 from flask_cors import CORS
-import mysql.connector
 import psycopg2
 
 app = flask.Flask(__name__)
