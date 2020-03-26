@@ -68,10 +68,13 @@ intents:
 - writing_help
 - plagiarism
 - book_location
-- central_library_location
+- location_place
+- location_directions
 entities:
 - area_of_study
 - articles_domain
+- directions_to
+- directions_place
 slots:
   area_of_study:
     type: text
@@ -312,11 +315,10 @@ templates:
     - text: "You can find more details on plagiarism using https://www.scribbr.com/category/plagiarism/"
   utter_book_location:
     - text: "You can find books at The Science and Engineering Library, The Achitecture and Fine Arts Library or at the 3rd, 4th and 5th floors of the Central Library"
-  utter_central_library_location:
-    - text: "You can get directions to the Central Library by opening the following link. https://goo.gl/maps/Qym4bxxxY7E6HYiV8"
 actions:
 - action_insult
 - action_database_link
+- action_google_map_api
 - restart
 - utter_access_CINAHL_database
 - utter_add_money_to_print_quota
@@ -398,4 +400,3 @@ actions:
 - utter_what_can_i_help_you_with
 - utter_plagiarism
 - utter_book_location
-- utter_central_library_location

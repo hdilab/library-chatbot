@@ -12,7 +12,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted, ActionReverted
-
+import urllib.parse
 
 class ActionHelloWorld(Action):
 
@@ -55,6 +55,32 @@ class ActionHelloWorld(Action):
             you may select one of the database  with the Best Bets. Additional database are also listed here."
         dispatcher.utter_message(utter_database_link)
 
+        return []
+
+
+class ActionGoogleMap(Action):
+
+    def name(self) -> Text:
+        return "action_google_map_api"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        if len(tracker.latest_message['entities']) > 1:
+            from_place = tracker.latest_message['entities'][0]['value']
+            to_place = tracker.latest_message['entities'][1]['value']
+            from_place = "UTA " + from_place
+            to_place = "UTA " + to_place
+            dispatcher.utter_message(attachment={"type": "video", "payload": {
+                "src": "http://www.google.com/maps/embed/v1/directions?key=AIzaSyD1Bm69JxkgAfj7ZXhh-BEPYu-sHh5R2Pw&origin=" + urllib.parse.quote_plus(
+                    from_place) + "&destination=" + urllib.parse.quote_plus(
+                    to_place) + "&mode=walking"}})
+        else:
+            to_place = tracker.latest_message['entities'][0]['value']
+            to_place = "UTA " + to_place
+            dispatcher.utter_message(attachment={"type": "video", "payload": {
+                "src": "http://www.google.com/maps/embed/v1/place?key=AIzaSyD1Bm69JxkgAfj7ZXhh-BEPYu-sHh5R2Pw&q=" + urllib.parse.quote_plus(
+                    to_place)}})
         return []
 
 

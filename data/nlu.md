@@ -480,8 +480,33 @@
 - location of books
 - Where can i find print journals?
 
-##intent:central_library_location
-- How do i get to the central library
-- Where is the Central Library
-- Directions to the Central Library
-- location of the central library
+##intent:location_directions
+- How do I get from [Aerodynamics Research Building](directions_place) to [Carlisle Hall](directions_to)
+- How do I get from [Thermal Energy Plant](directions_place) to [Smart Hospital](directions_to)
+- How do I get from [Texas Hall](directions_place) to [UT Arlington Research Institute](directions_to)
+- How do I get from [Wetsel Service Center](directions_place) to [Nanofab Building](directions_to)
+- How do I get from [Davis Hall](directions_place) to [Business Building](directions_to)
+- How do I get to the [Aerodynamics Research Building](directions_place)
+- How do I get to the [College Park Center](directions_place)
+- How do I get to the [Carlisle Hall](directions_place)
+- Where is [Aerodynamics Research Building](directions_place)
+- Where is [College Park Center](directions_place)
+- Where is [Carlisle Hall](directions_place)
+- How do i get to the [Aerodynamics Research Building](directions_place)
+- How do i get to the [College Park Center](directions_place)
+- How do i get to the [Carlisle Hall](directions_place)
+- How do I find [Aerodynamics Research Building](directions_place)
+- How do I find [College Park Center](directions_place)
+- How do I find [Carlisle Hall](directions_place)
+- Location of the [Aerodynamics Research Building](directions_place)
+- Location of the [College Park Center](directions_place)
+- Location of the [Carlisle Hall](directions_place)
+- How to get to the [Aerodynamics Research Building](directions_place)
+- How to get to the [College Park Center](directions_place)
+- How to get to the [Carlisle Hall](directions_place)
+
+##lookup:directions_to
+lookup/buildings.txt
+
+##lookup:directions_place
+lookup/buildings.txt
