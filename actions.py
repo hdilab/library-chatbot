@@ -72,14 +72,14 @@ class ActionGoogleMap(Action):
             from_place = "UTA " + from_place
             to_place = "UTA " + to_place
             dispatcher.utter_message(attachment={"type": "video", "payload": {
-                "src": "http://www.google.com/maps/embed/v1/directions?key=AIzaSyD1Bm69JxkgAfj7ZXhh-BEPYu-sHh5R2Pw&origin=" + urllib.parse.quote_plus(
+                "src": "http://www.google.com/maps/embed/v1/directions?key=AIzaSyBZpu8VO4q_ks_5C8K2mF9JLB3tG7P_q34&origin=" + urllib.parse.quote_plus(
                     from_place) + "&destination=" + urllib.parse.quote_plus(
                     to_place) + "&mode=walking"}})
         else:
             to_place = tracker.latest_message['entities'][0]['value']
             to_place = "UTA " + to_place
             dispatcher.utter_message(attachment={"type": "video", "payload": {
-                "src": "http://www.google.com/maps/embed/v1/place?key=AIzaSyD1Bm69JxkgAfj7ZXhh-BEPYu-sHh5R2Pw&q=" + urllib.parse.quote_plus(
+                "src": "http://www.google.com/maps/embed/v1/place?key=AIzaSyBZpu8VO4q_ks_5C8K2mF9JLB3tG7P_q34&q=" + urllib.parse.quote_plus(
                     to_place)}})
         return []
 
