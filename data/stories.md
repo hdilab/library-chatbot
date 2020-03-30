@@ -267,3 +267,15 @@
 ## location_directions
 * location_directions
     - action_google_map_api
+    
+## tech_questions
+* tech_questions
+    - utter_tech_questions
+    
+## find_peer_reviewed_articles
+* find_peer_reviewed_articles
+    - utter_find_peer_reviewed_articles
+    
+## rent_laptop
+* rent_laptop
+    - utter_rent_laptop

@@ -70,6 +70,9 @@ intents:
 - book_location
 - location_place
 - location_directions
+- tech_questions
+- find_peer_reviewed_articles
+- rent_laptop
 entities:
 - area_of_study
 - articles_domain
@@ -315,6 +318,12 @@ templates:
     - text: "You can find more details on plagiarism using https://www.scribbr.com/category/plagiarism/"
   utter_book_location:
     - text: "You can find books at The Science and Engineering Library, The Achitecture and Fine Arts Library or at the 3rd, 4th and 5th floors of the Central Library"
+  utter_tech_questions:
+    - text: "Reach the OIT [Help Desk](https://oit.uta.edu/support/index.php) at 817-272-2208, through [Chat](https://www.uta.edu/help/chat/?utm_medium=email&utm_source=TrailBlazer_2020-03-25&utm_campaign=TrailBlazer), or via a [ServiceNow](https://uta.service-now.com/selfservice2) ticket"
+  utter_find_peer_reviewed_articles:
+    - text: "You can search for peer reviewed articles at https://libguides.uta.edu/az.php"
+  utter_rent_laptop:
+    - text: "You can get details about renting laptops at https://libraries.uta.edu/services/technology/borrow"
 actions:
 - action_insult
 - action_database_link
@@ -400,3 +409,6 @@ actions:
 - utter_what_can_i_help_you_with
 - utter_plagiarism
 - utter_book_location
+- utter_tech_questions
+- utter_find_peer_reviewed_articles
+- utter_rent_laptop

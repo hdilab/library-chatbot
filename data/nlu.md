@@ -32,8 +32,6 @@
 - How do I know if the article is peer reviewed?
 - tell me if the article is peer reviewed
 - is this article peer reviewed?
-- peer reviewed articles
-- article is pee
 
 ## intent:articles_from_pubmed
 - How do I obtain full articles from PubMed from the library computers
@@ -464,6 +462,7 @@
 ##intent:writing_help
 - Who can help guide me while writing my thesis
 - writing help
+- help writing an introduction
 
 ##intent:plagiarism
 - What is plagiarism?
@@ -510,3 +509,28 @@ lookup/buildings.txt
 
 ##lookup:directions_place
 lookup/buildings.txt
+
+##intent:tech_questions
+- How do I get tech help
+- Im locked out of my email.
+- How do I reset my password
+- I cant login to Canvas.
+- How do I reach the Help Desk
+- How do I contact OIT
+- My computer is broken.
+- Can I get access to software
+
+##intent:find_peer_reviewed_articles
+- Where can I find peer reviewed articles
+- Give me the link for peer reviewed articles
+
+##intent:rent_laptop
+- How do I rent a laptop
+- Where can I rent a laptop
+- How long can I rent a laptop
+- How do I rent a computer
+- Where can I rent a computer
+- How long can I rent a computer
+- How do I rent a ipad
+- Where can I rent a ipad
+- How long can I rent a ipad
