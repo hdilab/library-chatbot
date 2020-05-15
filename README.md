@@ -24,7 +24,6 @@ Here, the [Rasa](https://rasa.com/docs/rasa/) framework is used to create a chat
 > - Details on the Map API can be found at [https://cloud.google.com/maps-platform](https://cloud.google.com/maps-platform)
 > - The API key can be requested using the datacave@uta.edu account and updated in the file actions.py
 
-<<<<<<< HEAD
 > **Apache**
 > - To setup apache follow the link at [https://ubuntu.com/tutorials/install-and-configure-apache#1-overview](https://ubuntu.com/tutorials/install-and-configure-apache#1-overview)
 > - Edit the server files # TODO
@@ -82,15 +81,3 @@ ProxyPassReverse  /feedback http://localhost:5000/feedback
 ```
 > - Restart Apache
 >> - sudo systemctl restart apache2
-=======
-The training data for the chatbot will be provided inside **data > nlu.md**, and sample paths of conversations will be saved inside **data > stories.md**. Additionally the trained models will be stored in the **models** directory.
-
-**How to Use this repository to run in your local machine**
-> Once you clone this repository, please follow this procedure:
-> - Open widget_test.html in Safari, Google Chrome, or Firefox
-> - Open two terminal windows and activate your rasa environment in both terminal windows
-> - In one terminal, run the command **rasa run -m models --enable-api --log-file log.out --endpoints endpoints.yml --credentials credentials.yml**
-> - In the next terminal, run the command **rasa run actions**
-> - Go to your browser with the tab widget_test.html, and click on the blue chat icon on the bottom-left corner.
-> Follow the prompt or type your questions.
->>>>>>> master

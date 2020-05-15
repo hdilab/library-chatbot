@@ -32,11 +32,6 @@
 - How do I know if the article is peer reviewed?
 - tell me if the article is peer reviewed
 - is this article peer reviewed?
-<<<<<<< HEAD
-=======
-- peer reviewed articles
-- article is pee
->>>>>>> master
 
 ## intent:articles_from_pubmed
 - How do I obtain full articles from PubMed from the library computers
@@ -45,7 +40,6 @@
 - get articles from PUBMED
 - PubMed articles from library computers
 
-<<<<<<< HEAD
 ## intent:cite_an_article_using_apa
 - How do you cite an article and mission statement using APA?
 - cite an article using APA
@@ -74,21 +68,6 @@
 - cost of plotter printer
 - cost of plotter
 - how much to print posters
-=======
-## intent:choose
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
-- /choose[{"area_of_study": "History"}](area_of_study:History)
-- /choose[{"area_of_study": "Kinesiology"}](area_of_study:Kinesiology)
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
-- /choose[{"area_of_study": "Nursing"}](area_of_study:Nursing)
->>>>>>> master
-
-## intent:cite_an_article_using_apa
-- How do you cite an article and mission statement using APA?
-- cite an article using APA
-- cite the mission statement using APA format
-- how do you cite an article using APA
-- how do you cite mission statement using APA
 
 ## intent:deny
 - no
@@ -125,14 +104,6 @@
 - poster file type to print
 - What file do I need for a poster
 - What kind of file do I need to print a poster?
-
-## intent:find_authors_education_background
-- Where can I find an author's educational/professional background?
-- author's educational background
-- authors professional background
-- find an author's educational/professional background
-- authors background
-- authors backgroudn
 
 ## intent:find_RN_to_BSN_program_homepage
 - How can I find the RN to BSN Program Homepage?
@@ -225,15 +196,8 @@
 
 ## intent:link_for_apa_exposed
 - link for the presentation entitled "APA exposed: Everything you always wanted to know about APA format but were afraid to ask"?
-<<<<<<< HEAD
 - APA exposed
 - apa exposed
-=======
-- Everything you always wanted to know about APA format but were afraid to ask
-- APA exposed
-- apa exposed
-- wanted to know about APA format
->>>>>>> master
 
 ## intent:nursing_librarians_email
 - can you give me the email of one of the nursing librarians?
@@ -301,7 +265,6 @@
 - How do I find a research articles?
 - How do I find a research articles
 - How do I find a research article?
-<<<<<<< HEAD
 - How do I find an article?
 - I need an article
 - journal articles
@@ -315,14 +278,6 @@
 - reserving a study room
 - study room reserve in  central Library
 
-=======
-- /quantitative_research_article
-- /quantitative_research_article
-- /quantitative_research_article
-- /quantitative_research_article
-- How can I find research articles?
-
->>>>>>> master
 ## intent:resource_guide_for_nursing
 - How do I find the resource guide for nursing?
 - resource guide for nursing
@@ -346,7 +301,6 @@
 - Thank you
 - Yes, thank you
 
-<<<<<<< HEAD
 ## intent:acknowledge
 - ok
 - got it
@@ -360,14 +314,11 @@
 - how long does printing take
 - how much time will it take to print my poster
 
-=======
->>>>>>> master
 ## intent:title_page_for_uta_nursing_department
 - How do I do the title page that is required by UTA's Nursing department?
 - title page for uta nursing department
 - title page for UTA Nursing department
 - how to do title page for the nursing department
-<<<<<<< HEAD
 - CONHI title page
 
 ## intent:can_a_guest_use_library_computers
@@ -1225,11 +1176,6 @@
 - How do I contact OIT
 - My computer is broken.
 - Can I get access to software
-=======
-
-## synonym:History
-- {"area_of_study": "History"}
->>>>>>> master
 
 ##intent:find_peer_reviewed_articles
 - Where can I find peer reviewed articles
