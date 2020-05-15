@@ -42,3 +42,12 @@ core_endpoint:
 #  username: username
 #  password: password
 #  queue: queue
+
+tracker_store:
+    type: SQL
+    dialect: "postgresql"  # the dialect used to interact with the db
+    url: ""  # (optional) host of the sql db, e.g. "localhost"
+    db: "library"  # path to your db
+    username: "postgres"
+    password: "postgres"
+

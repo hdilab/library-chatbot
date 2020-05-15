@@ -1,3 +1,17 @@
+<<<<<<< HEAD
+intents:
+- hours_of_dining_services
+- plagiarism_tutorial_in
+- deny
+- affirm
+- access_CINAHL_database
+- add_money_to_print_quota
+- article_is_peer_reviewed
+- articles_from_pubmed
+- cite_an_article_using_apa
+- colors_and_sizes_of_poster
+- cost_to_print_the_plotter
+=======
 %YAML 1.1
 ---
 actions:
@@ -48,15 +62,82 @@ intents:
 - articles_from_pubmed
 - cite_an_article_using_apa
 - deny
+>>>>>>> master
 - difference_between_qualitative_quantative_articles
+- file_type_to_print_poster
 - find_RN_to_BSN_program_homepage
 - find_authors_education_background
+<<<<<<< HEAD
+- guest_visitor_alumni_library_access
+- guest_visitor_alumni_wireless_internet
+=======
 - goodbye
 - greet
+>>>>>>> master
 - how_to_know_type_of_articles
+- pay_for_the_poster
 - libraries_hours
 - link_for_apa_exposed
 - nursing_librarians_email
+<<<<<<< HEAD
+- plotter_printer_location
+- poster_pickup_location
+- quantitative_research_article
+- research_article
+- reserve_study_room
+- resource_guide_for_nursing
+- stop
+- submit_poster_order_online
+- time_to_print_poster
+- title_page_for_uta_nursing_department
+- can_a_guest_use_library_computers
+- cash
+- credit
+- get_temporary_card
+- choose
+- insult: {triggers: action_insult}
+- greet: {triggers: utter_greet}
+- goodbye: {triggers: utter_goodbye}
+- thanks
+- acknowledge
+- class_writing_assignment
+- other
+- research_project
+- check_out_book
+- librarian_information
+- library_printing
+- get_to_databases
+- printing_personal_machine
+- netid_username
+- netid_plus
+- vpn
+- alma
+- search_cinahl
+- course_reserves
+- etd
+- ezproxy_url
+- inter_library_loan
+- interview_room
+- journal_search
+- mymav
+- off_campus_access
+- oit_chat
+- oit_help_desk
+- silent_sign_in
+- writing_help
+- plagiarism
+- book_location
+- location_place
+- location_directions
+- tech_questions
+- find_peer_reviewed_articles
+- rent_laptop
+entities:
+- area_of_study
+- articles_domain
+- directions_to
+- directions_place
+=======
 - plagiarism_tutorial_in
 - quantitative_research_article
 - resource_guide_for_nursing
@@ -64,19 +145,37 @@ intents:
 - title_page_for_uta_nursing_department
 - thanks
 
+>>>>>>> master
 slots:
   area_of_study:
+    type: text
     initial_value: Kinesiology
-    type: text
   articles_domain:
-    initial_value: Nursing
     type: text
+    initial_value: Nursing
+  number_failures:
+    type: float
+    min_value: 0.0
 templates:
   utter_access_CINAHL_database:
-  - text: "You can open the given link in the new tab to access CINAHL:  https://libguides.uta.edu/cinahl\
-      \ . \nIf you are off-campus, you will be prompted to log in using your NetID\
-      \ username and password."
+  - text: "Click for CINAHL:  https://libguides.uta.edu/cinahl If you are Off-campus, you may be prompted to login before seeing the database. If so, use your NetID username and password."
+  utter_add_money_to_print_quota:
+  - buttons:
+    - payload: '/cash'
+      title: Cash
+    - payload: '/credit'
+      title: Credit Card
+    text: Are you paying by Cash or Card?
+  utter_pay_by_cash_response:
+  - text: Use the Print Card Vending machine. There is one on the 2nd floor of the Central Library and one in the UC. You can find more information at <https://library.uta.edu/printing>
+  utter_pay_by_credit_response:
+  - text: Visit https://www.uta.edu/campus-ops/mavexpress/ and load money to your MavExpress card. You can find more information at <https://library.uta.edu/printing>
   utter_anymore_questions:
+<<<<<<< HEAD
+  - text: Great. Is there anything else I can help you with?
+  utter_article_is_peer_reviewed:
+  - text: If you searched for peer reviewed articles in a database, your results will be restricted to only peer reviewed content. Otherwise search online for the journal's website to see if it states that its articles are peer reviewed.
+=======
   - text: Do you have any more questions?
   utter_article_is_peer_reviewed:
   - text: 1. If you’ve used a library database the full description may include the phrase "Peer Reviewed.
@@ -85,6 +184,7 @@ templates:
              click a little box to limit to only those items which are peer reviewed journals.
           3. If you have obtained the article from a resource other than a library database
              you can consult the options outlined in Academic (Peer Reviewed) Journals
+>>>>>>> master
   utter_article_type_from_articles:
   - text: "They will not always use the words qualitative or quantitative or mixed\
       \  methods.\n You will need to see how they describe the design in the methodology."
@@ -92,7 +192,12 @@ templates:
   - text: Okay! Let's start again, please rephrase your question?
   - text: "No issues! Let's try this again.\n Please repeat your query?"
   utter_ask_article_for_research_or_project:
-  - text: Are you looking for journal articles for a research paper or project?
+  - buttons:
+    - payload: '/affirm'
+      title: Yes
+    - payload: '/deny'
+      title: No
+    text: Are you looking for journal articles for a research paper/project?
   utter_ask_field_of_study:
   - buttons:
     - payload: '/choose{"area_of_study": "nursing"}'
@@ -110,6 +215,17 @@ templates:
     - payload: '/choose{"area_of_study": "others"}'
       title: Others
     text: What are you studying?
+<<<<<<< HEAD
+  utter_can_i_submit_poster_order_online:
+  - text: No, we can offer assistance with formatting, but we do not take orders. To print a poster, use the plotter printer on the 2nd floor of the library.
+  utter_cite_an_article_using_apa:
+  - text: Please use the following link https://www.libguides.uta.edu/apa
+  utter_colors_and_sizes_of_poster:
+  - text: All colors are available. The length can be however long you would like
+      with a maximum width of 42 inches.
+  utter_cost_to_print_the_plotter:
+  - text: $ 0.09 per linear inch up to 42 inches on one side. More information can be found at <https://www.library.uta.edu/printing>
+=======
   utter_cite_an_article_using_apa_partA:
   - text: Part A
           - Please open the link in new tab <https://libguides.uta.edu/NursingInfo>, clik on the tab **Databases**, and select CINAHL.
@@ -121,6 +237,7 @@ templates:
             1. Figure out an interest in nursing, then find a professional organization that encompasses that interest.
             2. Find the mission statement. This is usually on an "About Us" page or something similar.
             - Then cite it as a webpage according to section 6.05 of the APA manual (page 171-172). For more info on citing using APA, see the APA style blog (http://www.apastyle.org/learn/quick-guide-on-references.aspx#Websites)"
+>>>>>>> master
   utter_default:
   - text: Sorry, I did not understand you. Please rephrase your question.
   utter_did_that_help:
@@ -128,6 +245,14 @@ templates:
   utter_did_you_open_link:
   - text: Did you open the link?
   utter_difference_between_qualitative_quantative_articles:
+<<<<<<< HEAD
+  - text: "You could review the following link for more information: https://libguides.uta.edu/c.php?g=898050&p=6460553\
+      \ \n There is a lot of good content throughout the guide."
+  utter_file_type_to_print_poster:
+  - text: We recommend using any of the following; JPG, PNG, or PDF.
+  utter_find_authors_education_background:
+  - text: The author's credentials are usually in the article by their names at the bottom or the end. If not, search online for thier name to find their research profile for this information.
+=======
   - text: "Here is one chart in particular I like https://libguides.uta.edu/c.php?g=898050&p=6460553\
       \ \n There is a lot of good content in the guide"
   utter_find_authors_education_background_i:
@@ -142,6 +267,7 @@ templates:
   utter_find_authors_education_background_iv:
   - text: "Rarely you might not be able to find out anything about the author, even after looking through the article and searching the internet.\
           The lack of information would be important in this case."
+>>>>>>> master
   utter_general_database:
   - text: 'Please open this link in new tab: https://libguides.uta.edu/quantitative_and_qualitative_research'
   utter_goodbye:
@@ -155,20 +281,41 @@ templates:
     - payload: /difference_between_qualitative_quantative_articles
       title: What is the difference between quantitative and qualitative articles?
     - payload: /quantitative_research_article
-      title: How can I find research articles?
+      title: How can I find quantitative research articles?
     - payload: /find_RN_to_BSN_program_homepage
       title: How can I find RN to BSN program homepage?
     - payload: /plagiarism_tutorial_in
       title: Where can I find the plagiarism tutorial?
-    text: "Hey! What can I do for you? \nSelect an option below or type your question\
+    text: "Hi, I’m Luz, a Chatbot here to answer common library questions. Try me out and see if I answer your question. How can I help you? \nSelect an option here or type your question\
       \ below."
+  utter_guest_computer_account:
+  - text: More information on what is required to request an account is available
+      at [Guest Computer Accounts ](https://library.uta.edu/services-visitors/using-computers)
+      https://library.uta.edu/services-visitors/using-computers.
+  utter_guest_visitor_alumni_library_access:
+  - text: Yes, the library is open to the public from 7am to midnight with a government issues identification. For more information please visit https://www.library.uta.edu/services-visitors
+  utter_guest_visitor_alumni_wireless_internet:
+  - text: You can use UTA guest wifi. More information can be found at https://www.oit.uta.edu/services/guest-wifi/
   utter_happy_to_help:
   - text: Hi ! I would be happy to help you.
+  utter_hours_of_dining_services:
+  - text: You will find hours of all dining services available at the University of
+      Texas at Arlington here https://new.dineoncampus.com/utarlington/hours-of-operation.
+      Please open the link in new tab for detail information.
   utter_input_in_CINAHL:
   - text: "Input a search with terms that may be found in the resources you are looking\
       \ for. Combine like-terms with OR.\n An example search is youth OR adolescent\
       \ OR teen OR teenager."
   utter_link_for_apa_exposed:
+<<<<<<< HEAD
+  - text: "Please open the link in the new tab <https://gseacademic.harvard.edu/~instruct/articulate/apa_mod/APA_Intro/player.html>\
+      \  which will take you to Mages, W. K. (n.d.). APA exposed: Everything you always\
+      \ wanted to know about APA format but were afraid to ask Online presentation(APA\
+      \ tutorial). \n View the tutorial and complete as directed the attestation within\
+      \ your assignment.\n Please **enable Adobe Flash Player**"
+  utter_more_help_librarian_email:
+  - text: If you need more help, email <askus@uta.edu>
+=======
     - text: "Please open the link in the new tab <https://gseacademic.harvard.edu/~instruct/articulate/apa_mod/APA_Intro/player.html> \
             \ which will take you to Mages, W. K. (n.d.). APA exposed: Everything you always wanted to know about APA format but were \
             afraid to ask Online presentation(APA tutorial). \n
@@ -177,6 +324,7 @@ templates:
 
   utter_more_help_librarian_email:
   - text: If you need more help, you can email at <askus@uta.edu>
+>>>>>>> master
   utter_my_intro:
   - text: Hi there, I am a nursing bot. How can I help you?
   utter_nursing_database:
@@ -185,6 +333,32 @@ templates:
       \ own tab. \nYou'll probably need to log in using your UTA Net ID. Once you\
       \ enter your Net ID and password, \nsearch with the general search terms"
   utter_nursing_librarians_email:
+<<<<<<< HEAD
+  - text: "You can contact the nursing librarians using the following email:  nursinglibrarians@uta.edu"
+  utter_open_pubmed_website:
+  - text: 'Visit https://www.libguides.uta.edu/pubmed and type a simple search at the top. To access an article, click its title & then the UTA link at the top right.'
+  utter_pay_for_the_poster:
+  - buttons:
+    - payload: /get_temporary_card
+      title: How to get a temporary card?
+    - payload: /add_money_to_print_quota
+      title: How to load money onto Mav ID?
+    text: You can use money loaded onto your Mav Id or a temporary print card.
+  utter_plagiarism_tutorial_link:
+  - text: Please proceed to the "Acknowledging Sources" plagiarism tutorial [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
+  utter_plotter_printer_location:
+  - text: You can find plotter printers in the 2nd floor of the Central Library, the Science and Engineering Library, and the Architecture and Fine Arts Library.
+  utter_poster_pickup_location:
+  - text: The print process is self-service so you will be sending the poster to the
+      plotter and you’re responsible for picking up prints following completion. The
+      library is not responsible for any prints left unattended.
+  utter_provide_RN_to_BSN_homepage_link:
+  - text: Please open the link of RN to BSN degree webpage <http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php>
+      in the new tab.
+  utter_resource_guide_for_nursing:
+  - text: Please open this guide in new tab <https://libguides.uta.edu/nursing>.
+      If you have more questions, please contact the nursing librarians at <nursinglibrarians@uta.edu>
+=======
   - text: The email address of nursing librarian is nursinglibrarians@uta.edu.
   - text: You can email to nursing librarian at nursinglibrarians@uta.edu.
   utter_open_pubmed_website:
@@ -198,13 +372,193 @@ templates:
   - text: Please open the link of RN to BSN degree webpage <http://www.uta.edu/conhi/academics/nursing-undergrad/bsn/rn-bsn.php> in the new tab.
   utter_plagiarism_tutorial_link:
   - text: Please proceed to Acknowledging Sources [http://library.uta.edu/plagiarism/index.html](http://library.uta.edu/plagiarism/index.html)
+>>>>>>> master
   utter_start_chat_again_button:
   - buttons:
     - payload: /greet
       title: Start Over
+<<<<<<< HEAD
+    text: Click the button below to start the conversation again.
+  utter_study_room_reserve:
+  - text: Visit <https://www.openroom.uta.edu> and login to see room availability and make a reservation. For more information visit <https://library.uta.edu/policies/group-study-room-policy>.
+  utter_time_to_print_poster:
+  - text: It is an automatic print once it is released from the print release station,
+      and most images print in less than 1 hour. During busy times of the year, your poster may be in a long virtual line for printing once released.
+  utter_title_page_for_nursing_department:
+  - text: "Please visit this example on the CONHI website: <https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf>"
+  utter_guest_library_computer_access:
+    - text: Yes, there are various options for guest use. Most visitors are allowed access to our guest computers for one hour per day. You can find more info at https://www.library.uta.edu/services-visitors/using-computers.
+  utter_get_temporary_card:
+    - text: To purchase a temporary print card you can visit the MAV Exporess machine located on the 2nd floor of the Central Library. You can purchase a temporary card for $1.
+  utter_respond_insult:
+    - text: That's not very nice
+  utter_handle_affirmation:
+    - text: Glad I could be of assistance. Is there anything else I could help you with?
+  utter_have_a_great_day:
+    - text: Have a great day!
+  utter_ask_article_type:
+  - buttons:
+    - payload: /class_writing_assignment
+      title: Class Writing Assignment
+    - payload: /research_project
+      title: Research Project
+    - payload: /other
+      title: Other/Just curious
+    text: What are the articles for?
+  utter_class_writing_response:
+    - text: "In that case, I recommend visiting https://www.libguides.uta.edu/az.php and selecting a database based on your research topic. Each database is listed alphabetically. Read its description and click on the name of one you want to begin searching. If you have more questions, you can contact your librarian listed here: library.uta.edu/subject-librarians"
+  utter_other_articles:
+    - text: "Check out https://www.libguides.uta.edu to see guides to finding articles. Clicke on your subject or topic area and visit a guide of interest. If you have more questions, email askus@uta.edu"
+  utter_check_out_books:
+    - text: "You can search for books on the UTA Library website if available, and with the call number, you can find the book where it is located. Once you do, with your Mav ID you can check it out from Guest Services on the first floor."
+  utter_library_printing:
+    - text: "Visit https://library.uta.edu/printing for instructions."
+  utter_get_to_databases:
+    - text: "You can use the link: https://libguides.uta.edu/az.php to access the databases. You can also use: https://libguides.uta.edu/?b=s to search by subject."
+  utter_printing_personal_machine:
+    - text: "You can print from your personal device using the following link: https://pharosmobileprt.uta.edu/MyPrintCenter/. Log in using your NetID and password. The file you wish to print must be downloaded onto your personal device. Here is guide for more information: https://ask.uta.edu/loader.php?fid=2869&type=1&key=52369283f49efc780b997fff4119c541"
+  utter_netid_username:
+    - text: "You can retrieve NETID at https://netidss.uta.edu/sspr/public/forgottenusername"
+  utter_netid_plus:
+    - text: "Enroll in NetIDplus, https://webapps.uta.edu/oit/netidplus/login. You must enroll in NetIDplus before you can install Pulse Secure VPN, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi"
+  utter_vpn:
+    - text: "If you have difficulties accessing Library resources, try a Pulse Secure VPN connection, https://pulse-vpn.uta.edu/dana-na/auth/url_default/welcome.cgi. Read the instructions; you first need to enroll in NetIDplus. If you need help with VPN, contact the OIT Help Desk at 817-272-2208."
+  utter_alma:
+    - text: "To improve services for students and faculty, UTA Libraries upgraded its automated systems to enhance information discovery and research.   For details visit, https://library.uta.edu/news/uta-libraries-launches-alma. If you have feedback or need further information, contact your subject librarian, https://library.uta.edu/subject-librarians. "
+  utter_search_cinahl:
+    - text: "Watch the video to understand searching CINAHL, https://youtu.be/OTvSwEZ1pP4. You can apply this information to searching other databases for any topic."
+  utter_course_reserves:
+    - text: "Search using your course number or instructor's name. https://uta.summon.serialssolutions.com/#!/course_reserves "
+  utter_etd:
+    - text: "For formatting questions, contact a member of your committee. For information about submitting your thesis or dissertation, visit this guide, http://libguides.uta.edu/etds. If you have further questions, contact Brittany Griffiths, brittany.griffiths@uta.edu "
+  utter_ezproxy_url:
+    - text: "You can use the following url https://login.ezproxy.uta.edu/login?url="
+  utter_inter_library_loan:
+    - text: "Use InterLibrary Loan to request resources the Library does not own. https://uta.illiad.oclc.org/illiad/index.htm"
+  utter_interview_room:
+    - text: "To request an interview room in the UTA Lockheed Martin Career Development Center, https://www.uta.edu/careers/students/Room%20Request.php"
+  utter_journal_search:
+    - text: "Go to the library homepage, library.uta.edu. In the 'Research' column, click on 'Journal Search.' Enter a journal title or browse by subject."
+  utter_mymav:
+    - text: "MyMav Fluid Resource Guide, https://uta.service-now.com/kb_view.do?sysparm_article=KB0011170. If you do not find the answer on the guide, contact the OIT Help Desk at 817-272-2208 or visit OIT chat at https://www.uta.edu/help/chat/"
+  utter_off_campus_access:
+    - text: "Here's a guide to help troubleshoot off-campus access issues, https://libguides.uta.edu/offcampus"
+  utter_oit_chat:
+    - text: "I suggest you contact OIT for help with your tech issue. Call 817-272-2208 or use the OIT chat service at https://www.uta.edu/help/chat/ "
+  utter_oit_help_desk:
+    - text: "For technical issues (ex. UTA email, VPN, NetIDplus) contact the OIT Help Desk, https://oit.uta.edu/support/index.php"
+  utter_silent_sign_in:
+    - text: "If you receive a 'silent sign-in' error message, try: 1) hit the back arrow; 2) sign-in to your UTA email and try accessing the resource again; 3) clear your browser cache."
+  utter_writing_help:
+    - text: "For help with your writing, contact the UTA Writing Center, http://www.uta.edu/owl/, to set an appointment with a writing consultant. For additional resources, visit this guide, http://libguides.uta.edu/researchprocess/write."
+  utter_quantitative_research_article:
+    - text: "You can find information about Quantitative articles at https://libguides.uta.edu/quantitative_and_qualitative_research"
+  utter_what_can_i_help_you_with:
+    - text: "What can I help you with?"
+  utter_plagiarism:
+    - text: "You can find more details on plagiarism using https://www.scribbr.com/category/plagiarism/"
+  utter_book_location:
+    - text: "You can find books at The Science and Engineering Library, The Achitecture and Fine Arts Library or at the 3rd, 4th and 5th floors of the Central Library"
+  utter_tech_questions:
+    - text: "Reach the OIT [Help Desk](https://oit.uta.edu/support/index.php) at 817-272-2208, through [Chat](https://www.uta.edu/help/chat/?utm_medium=email&utm_source=TrailBlazer_2020-03-25&utm_campaign=TrailBlazer), or via a [ServiceNow](https://uta.service-now.com/selfservice2) ticket"
+  utter_find_peer_reviewed_articles:
+    - text: "You can search for peer reviewed articles at https://libguides.uta.edu/az.php"
+  utter_rent_laptop:
+    - text: "You can get details about renting laptops at https://libraries.uta.edu/services/technology/borrow"
+actions:
+- action_fallback
+- action_insult
+- action_database_link
+- action_google_map_api
+- restart
+- utter_access_CINAHL_database
+- utter_add_money_to_print_quota
+- utter_anymore_questions
+- utter_article_is_peer_reviewed
+- utter_article_type_from_articles
+- utter_ask_again
+- utter_ask_article_for_research_or_project
+- utter_ask_field_of_study
+- utter_can_i_submit_poster_order_online
+- utter_cite_an_article_using_apa
+- utter_colors_and_sizes_of_poster
+- utter_cost_to_print_the_plotter
+- utter_default
+- utter_did_that_help
+- utter_did_you_open_link
+- utter_difference_between_qualitative_quantative_articles
+- utter_file_type_to_print_poster
+- utter_find_authors_education_background
+- utter_general_database
+- utter_goodbye
+- utter_gratitude
+- utter_greet
+- utter_guest_computer_account
+- utter_guest_visitor_alumni_library_access
+- utter_guest_visitor_alumni_wireless_internet
+- utter_happy_to_help
+- utter_hours_of_dining_services
+- utter_input_in_CINAHL
+- utter_link_for_apa_exposed
+- utter_more_help_librarian_email
+- utter_my_intro
+- utter_nursing_database
+- utter_nursing_librarians_email
+- utter_open_pubmed_website
+- utter_pay_for_the_poster
+- utter_plagiarism_tutorial_link
+- utter_plotter_printer_location
+- utter_poster_pickup_location
+- utter_provide_RN_to_BSN_homepage_link
+- utter_resource_guide_for_nursing
+- utter_start_chat_again_button
+- utter_study_room_reserve
+- utter_time_to_print_poster
+- utter_title_page_for_nursing_department
+- utter_guest_library_computer_access
+- utter_pay_by_cash_response
+- utter_pay_by_credit_response
+- utter_get_temporary_card
+- utter_respond_insult
+- utter_handle_affirmation
+- utter_have_a_great_day
+- utter_ask_article_type
+- action_article_type
+- utter_other_articles
+- utter_class_writing_response
+- utter_check_out_books
+- utter_library_printing
+- utter_get_to_databases
+- utter_printing_personal_machine
+- utter_netid_username
+- utter_netid_plus
+- utter_vpn
+- utter_alma
+- utter_search_cinahl
+- utter_course_reserves
+- utter_etd
+- utter_ezproxy_url
+- utter_inter_library_loan
+- utter_interview_room
+- utter_journal_search
+- utter_mymav
+- utter_off_campus_access
+- utter_oit_chat
+- utter_oit_help_desk
+- utter_silent_sign_in
+- utter_writing_help
+- utter_quantitative_research_article
+- utter_what_can_i_help_you_with
+- utter_plagiarism
+- utter_book_location
+- utter_tech_questions
+- utter_find_peer_reviewed_articles
+- utter_rent_laptop
+=======
     text: "Click the button below to start the conversation again."
   utter_resource_guide_for_nursing:
   - text: Please open this guide in new tab <https://libguides.uta.edu/SearchingCINAHL>. If you have more questions,
           please contact the nursing librarians at <nursinglibrarians@uta.edu>
   utter_title_page_for_nursing_department:
     - text: Please refer this page for the reference <https://www.uta.edu/conhi/_doc/msn-resources/APAFormat.pdf>
+>>>>>>> master
