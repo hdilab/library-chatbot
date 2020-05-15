@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nursing Chatbot</title>
+</head>
+<body>
+	<h1>Testing of Chatbot Widget</h1>
+	<div id="webchat"></div>
+	<script src="https://s3.amazonaws.com/sanjaythapa.com/uta_chatbot_widget.js">
+	</script>
+	<script>
+	       WebChat.default.init({
+	           selector: "#webchat",
+	           initPayload: "Hi",
+	           interval: 1000, // 1000 ms between each message
+	           customData: {"userId": "123"}, // arbitrary custom data. Stay minimal as this will be added to the socket
+	           socketUrl: "http://localhost:5005",
+	           socketPath: "/socket.io/",
+	           title: "UTA Chatbot",
+	           subtitle: "Available 24/7",
+	           profileAvatar: "https://s3.amazonaws.com/sanjaythapa.com/uta_logo.jpg",
+	       })
+	</script>
+	<script>
+	(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+</script>
+
+</body>
+</html>
