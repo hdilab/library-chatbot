@@ -13,6 +13,8 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import UserUtteranceReverted, ActionReverted
 import urllib.parse
+import psycopg2
+from rasa_sdk.events import SlotSet
 
 class ActionHelloWorld(Action):
 
@@ -66,31 +68,52 @@ class ActionGoogleMap(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-        if len(tracker.latest_message['entities']) > 1:
-            from_place = tracker.latest_message['entities'][0]['value']
-            to_place = tracker.latest_message['entities'][1]['value']
-            from_place = "UTA " + from_place
-            to_place = "UTA " + to_place
-            dispatcher.utter_message(attachment={"type": "video", "payload": {
-                "src": "http://www.google.com/maps/embed/v1/directions?key=AIzaSyBZpu8VO4q_ks_5C8K2mF9JLB3tG7P_q34&origin=" + urllib.parse.quote_plus(
-                    from_place) + "&destination=" + urllib.parse.quote_plus(
-                    to_place) + "&mode=walking"}})
-        else:
-            to_place = tracker.latest_message['entities'][0]['value']
-            to_place = "UTA " + to_place
-            dispatcher.utter_message(attachment={"type": "video", "payload": {
-                "src": "http://www.google.com/maps/embed/v1/place?key=AIzaSyBZpu8VO4q_ks_5C8K2mF9JLB3tG7P_q34&q=" + urllib.parse.quote_plus(
-                    to_place)}})
+        try:
+            if len(tracker.latest_message['entities']) > 1:
+                from_place = tracker.latest_message['entities'][0]['value']
+                to_place = tracker.latest_message['entities'][1]['value']
+                from_place = "UTA " + from_place
+                to_place = "UTA " + to_place
+                dispatcher.utter_message(attachment={"type": "video", "payload": {
+                    "src": "https://www.google.com/maps/embed/v1/directions?key=AIzaSyB5boK0YWtedGIQmU4diY3pVBCSW6web9s&origin=" + urllib.parse.quote_plus(
+                        from_place) + "&destination=" + urllib.parse.quote_plus(
+                        to_place) + "&mode=walking"}})
+            else:
+                to_place = tracker.latest_message['entities'][0]['value']
+                to_place = "UTA " + to_place
+                dispatcher.utter_message(attachment={"type": "video", "payload": {
+                    "src": "https://www.google.com/maps/embed/v1/place?key=AIzaSyB5boK0YWtedGIQmU4diY3pVBCSW6web9s&q=" + urllib.parse.quote_plus(
+                        to_place)}})
+        except Exception as ex:
+            pass
         return []
 
 
-class ActionIsBot(Action):
-    """Revertible mapped action for utter_is_bot"""
-
+class ActionInsult(Action):
     def name(self):
         return "action_insult"
 
     def run(self, dispatcher, tracker, domain):
         dispatcher.utter_template("utter_respond_insult", tracker)
         return [UserUtteranceReverted()]
+
+
+class ActionFallback(Action):
+    """Revertible mapped action for utter_is_bot"""
+
+    def name(self):
+        return "action_fallback"
+
+    def run(self, dispatcher, tracker, domain):
+        number_failures = tracker.get_slot("number_failures")
+        print(number_failures)
+        if number_failures is None:
+            number_failures = 0.0
+        number_failures += 1.0
+        if number_failures == 2.0:
+            number_failures = 0.0
+            dispatcher.utter_message("I'm having difficulty understanding your question. If you would like to speak to person please click on the link https://libraries.uta.edu/live-help")
+        else:
+            dispatcher.utter_message("Sorry, I did not understand you. Please rephrase your question.")
+        return [UserUtteranceReverted(), SlotSet("number_failures", number_failures)]
 

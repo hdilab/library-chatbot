@@ -19,7 +19,7 @@ def submit_feedback():
     conn = None
     try:
         data = request.json
-        conn = psycopg2.connect(host="localhost", database="library", user="library", password="library")
+        conn = psycopg2.connect(host="localhost", database="library", user="postgres", password="postgres")
         cursor = conn.cursor()
         sql_parameterized_query = "insert into feedback (session_id ,smiley, questions) values(%s, %s, %s ) "
         input_values = (data.get("session_id"), data.get("smiley"), data.get("questions"))

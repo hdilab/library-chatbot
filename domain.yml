@@ -85,6 +85,9 @@ slots:
   articles_domain:
     type: text
     initial_value: Nursing
+  number_failures:
+    type: float
+    min_value: 0.0
 templates:
   utter_access_CINAHL_database:
   - text: "Click for CINAHL:  https://libguides.uta.edu/cinahl If you are Off-campus, you may be prompted to login before seeing the database. If so, use your NetID username and password."
@@ -325,6 +328,7 @@ templates:
   utter_rent_laptop:
     - text: "You can get details about renting laptops at https://libraries.uta.edu/services/technology/borrow"
 actions:
+- action_fallback
 - action_insult
 - action_database_link
 - action_google_map_api
